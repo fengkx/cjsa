@@ -169,7 +169,7 @@ importers:
       time-span: ^5.0.0
       tsd: ^0.17.0
       xo: ^0.44.0
-      yocto-queue: link:../yocto-queue
+      yocto-queue: npm:@tocjs/yocto-queue@^1.0.0
     dependencies:
       yocto-queue: link:../yocto-queue
     devDependencies:
