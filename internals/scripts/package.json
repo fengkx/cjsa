@@ -6,7 +6,8 @@
   "author": "fengkx",
   "license": "GPL-3.0",
   "bin": {
-    "patch-package-json": "./patch-package-json.js"
+    "patch-package-json": "./patch-package-json.js",
+    "generate-readme": "./generate-readme.js"
   },
   "dependencies": {
     "@tocjs/internals-shared": "workspace:*",
