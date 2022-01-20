@@ -1,0 +1,13 @@
+{
+  "name": "@tocjs/find-up",
+  "type": "commonjs",
+  "exports": "./dist-cjs/index.cjs",
+  "files": ["./dist-cjs"],
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "locate-path": "link:../locate-path",
+    "path-exists": "link:../path-exists"
+  }
+}
