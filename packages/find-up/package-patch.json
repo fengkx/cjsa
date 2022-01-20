@@ -10,7 +10,7 @@
     "postpack": "jest"
   },
   "dependencies": {
-    "locate-path": "link:../locate-path",
-    "path-exists": "link:../path-exists"
+    "locate-path": "npm:@tocjs/locate-path",
+    "path-exists": "npm:@tocjs/path-exists"
   }
 }

@@ -132,8 +132,8 @@ importers:
     specifiers:
       ava: ^3.15.0
       is-path-inside: ^4.0.0
-      locate-path: link:../locate-path
-      path-exists: link:../path-exists
+      locate-path: npm:@tocjs/locate-path
+      path-exists: npm:@tocjs/path-exists
       tempy: ^2.0.0
       tsd: ^0.17.0
       xo: ^0.44.0
