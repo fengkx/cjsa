@@ -1,0 +1,16 @@
+{
+  "name": "@tocjs/internals-shared",
+  "version": "0.0.1",
+  "description": "",
+  "private": true,
+  "exports": {
+    "./const": {
+      "require": "./const.js"
+    }
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "GPL-3.0"
+}

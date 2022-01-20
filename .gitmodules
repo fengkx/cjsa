@@ -1,0 +1,18 @@
+[submodule "modules/find-up"]
+	path = modules/find-up
+	url = https://github.com/sindresorhus/find-up
+[submodule "modules/locate-path"]
+	path = modules/locate-path
+	url = https://github.com/sindresorhus/locate-path
+[submodule "modules/p-locate"]
+	path = modules/p-locate
+	url = https://github.com/sindresorhus/p-locate
+[submodule "modules/yocto-queue"]
+	path = modules/yocto-queue
+	url = https://github.com/sindresorhus/yocto-queue
+[submodule "modules/p-limit"]
+	path = modules/p-limit
+	url = https://github.com/sindresorhus/p-limit
+[submodule "modules/path-exists"]
+	path = modules/path-exists
+	url = https://github.com/sindresorhus/path-exists

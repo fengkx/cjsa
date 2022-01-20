@@ -1,0 +1,35 @@
+{
+  "name": "tocjs",
+  "version": "0.0.1",
+  "description": "To cjs",
+  "private": true,
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "test": "pnpm -r run --filter ./packages --parallel --stream test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fengkx/tocjs.git"
+  },
+  "keywords": [
+    "commonjs",
+    "esm"
+  ],
+  "author": "fengkx",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/fengkx/tocjs/issues"
+  },
+  "homepage": "https://github.com/fengkx/tocjs#readme",
+  "devDependencies": {
+    "jest": "^27.4.7",
+    "rollup": "^2.64.0",
+    "tsup": "^5.11.11",
+    "typescript": "^4.5.4",
+    "zx": "^4.3.0"
+  },
+  "dependencies": {
+    "@tocjs/internals-scripts": "workspace:*",
+    "@tocjs/internals-shared": "workspace:*"
+  }
+}

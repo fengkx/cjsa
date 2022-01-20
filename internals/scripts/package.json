@@ -1,0 +1,16 @@
+{
+  "name": "@tocjs/internals-scripts",
+  "version": "0.0.1",
+  "description": "internal scripts",
+  "private": true,
+  "author": "fengkx",
+  "license": "GPL-3.0",
+  "bin": {
+    "patch-package-json": "./patch-package-json.js"
+  },
+  "dependencies": {
+    "@tocjs/internals-shared": "workspace:*",
+    "json-merge-patch": "^1.0.2",
+    "zx": "^4.3.0"
+  }
+}
