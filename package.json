@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "test": "pnpm -r run --filter ./packages --parallel --stream test",
-    "clean:modules":"pnpm -r --filter ./modules exec -- git checkout -- ."
+    "clean:modules": "pnpm -r --filter ./modules exec -- git checkout -- ."
   },
   "repository": {
     "type": "git",
@@ -24,6 +24,7 @@
   "homepage": "https://github.com/fengkx/tocjs#readme",
   "devDependencies": {
     "jest": "^27.4.7",
+    "prettier": "^2.5.1",
     "rollup": "^2.64.0",
     "tsup": "^5.11.11",
     "typescript": "^4.5.4",
