@@ -5,7 +5,8 @@
   "private": true,
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "test": "pnpm -r run --filter ./packages --parallel --stream test"
+    "test": "pnpm -r run --filter ./packages --parallel --stream test",
+    "clean:modules":"pnpm -r --filter ./modules exec -- git checkout -- ."
   },
   "repository": {
     "type": "git",
