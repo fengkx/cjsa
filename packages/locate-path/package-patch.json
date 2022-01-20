@@ -10,6 +10,6 @@
     "postpack": "jest"
   },
   "dependencies": {
-    "p-locate": "link:../p-locate"
+    "p-locate": "npm:@tocjs/p-locate"
   }
 }

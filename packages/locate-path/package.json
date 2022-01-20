@@ -40,7 +40,7 @@
     "iterator"
   ],
   "dependencies": {
-    "p-locate": "link:../p-locate"
+    "p-locate": "npm:@tocjs/p-locate"
   },
   "devDependencies": {
     "ava": "^3.15.0",
