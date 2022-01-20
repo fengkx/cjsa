@@ -1,8 +1,8 @@
 {
   "name": "@tocjs/path-exists",
   "type": "commonjs",
-  "exports": "./dist-cjs/index.cjs",
-  "files": ["./dist-cjs"],
+  "exports": "./dist-cjs/index.js",
+  "files": ["dist-cjs/*"],
   "scripts": {
     "preinstall": "patch-package-json path-exists",
     "prepare": "node build-cjs.js",

@@ -2,7 +2,7 @@
   "name": "@tocjs/locate-path",
   "type": "commonjs",
   "exports": "./dist-cjs/index.cjs",
-  "files": ["./dist-cjs"],
+  "files": ["dist-cjs/*"],
   "scripts": {
     "preinstall": "patch-package-json locate-path",
     "prepare": "node build-cjs.js",

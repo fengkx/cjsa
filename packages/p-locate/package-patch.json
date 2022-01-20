@@ -2,7 +2,7 @@
   "name": "@tocjs/p-locate",
   "type": "commonjs",
   "exports": "./dist-cjs/index.cjs",
-  "files": ["./dist-cjs"],
+  "files": ["dist-cjs/*"],
   "scripts": {
     "preinstall": "patch-package-json p-locate",
     "prepare": "node build-cjs.js",

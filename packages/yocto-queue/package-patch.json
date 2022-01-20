@@ -2,7 +2,7 @@
   "name": "@tocjs/yocto-queue",
   "type": "commonjs",
   "exports": "./dist-cjs/index.js",
-  "files": ["./dist-cjs"],
+  "files": ["dist-cjs/*"],
   "scripts": {
     "preinstall": "patch-package-json yocto-queue",
     "prepare": "node build-cjs.js",

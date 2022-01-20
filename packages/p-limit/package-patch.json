@@ -2,7 +2,7 @@
   "name": "@tocjs/p-limit",
   "type": "commonjs",
   "exports": "./dist-cjs/index.cjs",
-  "files": ["./dist-cjs"],
+  "files": ["dist-cjs/*"],
   "scripts": {
     "preinstall": "patch-package-json p-limit",
     "prepare": "node build-cjs.js",

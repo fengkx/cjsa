@@ -23,7 +23,7 @@
     "postpack": "jest"
   },
   "files": [
-    "./dist-cjs"
+    "dist-cjs/*"
   ],
   "keywords": [
     "queue",

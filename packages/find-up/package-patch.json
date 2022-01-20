@@ -2,9 +2,12 @@
   "name": "@tocjs/find-up",
   "type": "commonjs",
   "exports": "./dist-cjs/index.cjs",
-  "files": ["./dist-cjs"],
+  "files": ["dist-cjs/*"],
   "scripts": {
-    "test": "jest"
+    "preinstall": "patch-package-json find-up",
+    "prepare": "node build-cjs.js",
+    "test": "jest",
+    "postpack": "jest"
   },
   "dependencies": {
     "locate-path": "link:../locate-path",
