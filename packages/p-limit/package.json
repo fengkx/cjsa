@@ -17,12 +17,12 @@
   },
   "scripts": {
     "test": "jest",
-    "preinstall": "patch-package-json yocto-queue",
+    "preinstall": "patch-package-json p-limit",
     "prepare": "node build-cjs.js",
     "postpack": "jest"
   },
   "files": [
-    "./dist-cjs"
+    "dist-cjs/*"
   ],
   "keywords": [
     "promise",
@@ -42,7 +42,7 @@
     "bluebird"
   ],
   "dependencies": {
-    "yocto-queue": "link:../yocto-queue"
+    "yocto-queue": "npm:@tocjs/yocto-queue@^1.0.0"
   },
   "devDependencies": {
     "ava": "^3.15.0",

@@ -10,6 +10,6 @@
     "postpack": "jest"
   },
   "dependencies": {
-    "yocto-queue": "link:../yocto-queue"
+    "yocto-queue": "npm:@tocjs/yocto-queue@^1.0.0"
   }
 }
