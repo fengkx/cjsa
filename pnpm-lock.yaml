@@ -186,7 +186,7 @@ importers:
       ava: ^3.15.0
       delay: ^5.0.0
       in-range: ^3.0.0
-      p-limit: link:../p-limit
+      p-limit: npm:@tocjs/p-limit@^4.0.0
       time-span: ^5.0.0
       tsd: ^0.17.0
       xo: ^0.44.0

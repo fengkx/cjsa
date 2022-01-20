@@ -10,6 +10,6 @@
     "postpack": "jest"
   },
   "dependencies": {
-    "p-limit": "link:../p-limit"
+    "p-limit": "npm:@tocjs/p-limit@^4.0.0"
   }
 }
