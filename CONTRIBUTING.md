@@ -13,6 +13,9 @@ For example: `git submodule add https://github.com/sindresorhus/escape-goat modu
 
 2. `pnpm run add:package` to generate a template code in `packages/<package name>`
 1. Finish `package-patch.json` and use `pnpx patch-package-json <package name>` to generate new package.sjon.
+
+The [package alias feature in pnpm](https://pnpm.io/aliases) can help you to change a package to commonjs one without changing the actual code.
+
 1. Finish `build-cjs.js` to building a working commonjs bundle. You can use either [tsup](https://tsup.egoist.sh), [tsc](https://www.typescriptlang.org/docs/handbook/compiler-options.html) or [rollup](https://rollupjs.org) to do the job.
 1. Write unit test in `packages/<package name>/test/pkg.test.js`
 1. generate README by `pnpx generate-readme`
