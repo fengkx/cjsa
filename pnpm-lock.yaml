@@ -201,8 +201,8 @@ importers:
     specifiers:
       ava: ^3.15.0
       is-path-inside: ^4.0.0
-      locate-path: npm:@tocjs/locate-path
-      path-exists: npm:@tocjs/path-exists
+      locate-path: npm:@cjsa/locate-path
+      path-exists: npm:@cjsa/path-exists
       tempy: ^2.0.0
       tsd: ^0.17.0
       xo: ^0.44.0
@@ -219,7 +219,7 @@ importers:
   packages/globby:
     specifiers:
       '@types/node': ^16.11.11
-      array-union: npm:@tocjs/array-union@^3.0.1
+      array-union: npm:@cjsa/array-union@^3.0.1
       ava: ^3.15.0
       dir-glob: ^3.0.1
       fast-glob: ^3.2.7
@@ -230,7 +230,7 @@ importers:
       matcha: ^0.7.0
       merge2: ^1.4.1
       rimraf: ^3.0.2
-      slash: npm:@tocjs/slash@^4.0.0
+      slash: npm:@cjsa/slash@^4.0.0
       tsd: ^0.19.0
       typescript: ^4.5.2
       xo: ^0.47.0
@@ -256,7 +256,7 @@ importers:
   packages/locate-path:
     specifiers:
       ava: ^3.15.0
-      p-locate: npm:@tocjs/p-locate
+      p-locate: npm:@cjsa/p-locate
       tsd: ^0.17.0
       xo: ^0.44.0
     dependencies:
@@ -275,7 +275,7 @@ importers:
       time-span: ^5.0.0
       tsd: ^0.17.0
       xo: ^0.44.0
-      yocto-queue: npm:@tocjs/yocto-queue@^1.0.0
+      yocto-queue: npm:@cjsa/yocto-queue@^1.0.0
     dependencies:
       yocto-queue: link:../yocto-queue
     devDependencies:
@@ -292,7 +292,7 @@ importers:
       ava: ^3.15.0
       delay: ^5.0.0
       in-range: ^3.0.0
-      p-limit: npm:@tocjs/p-limit@^4.0.0
+      p-limit: npm:@cjsa/p-limit@^4.0.0
       time-span: ^5.0.0
       tsd: ^0.17.0
       xo: ^0.44.0
