@@ -31,3 +31,6 @@
 [submodule "modules/escape-string-regexp"]
 	path = modules/escape-string-regexp
 	url = https://github.com/sindresorhus/escape-string-regexp
+[submodule "modules/escape-goat"]
+	path = modules/escape-goat
+	url = https://github.com/sindresorhus/escape-goat

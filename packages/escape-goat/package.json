@@ -1,0 +1,50 @@
+{
+  "name": "@cjsa/escape-goat",
+  "version": "4.0.0",
+  "description": "Escape a string for use in HTML or the inverse",
+  "license": "MIT",
+  "repository": "sindresorhus/escape-goat",
+  "funding": "https://github.com/sponsors/sindresorhus",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "https://sindresorhus.com"
+  },
+  "type": "commonjs",
+  "exports": "./dist-cjs/index.cjs",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "test": "pnpx jest",
+    "tocjs:patch-package-json": "pnpx patch-package-json escape-goat",
+    "prepare": "node build-cjs.js",
+    "postpack": "pnpx jest"
+  },
+  "files": [
+    "dist-cjs/*"
+  ],
+  "keywords": [
+    "escape",
+    "unescape",
+    "html",
+    "entity",
+    "entities",
+    "escaping",
+    "sanitize",
+    "sanitization",
+    "utility",
+    "template",
+    "attribute",
+    "value",
+    "interpolate",
+    "xss",
+    "goat",
+    "🐐"
+  ],
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "tsd": "^0.14.0",
+    "xo": "^0.38.2"
+  }
+}
