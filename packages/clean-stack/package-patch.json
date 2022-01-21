@@ -1,0 +1,15 @@
+{
+  "name": "@cjsa/clean-stack",
+  "type": "commonjs",
+  "exports": "./dist-cjs/index.cjs",
+  "files": ["dist-cjs/*"],
+  "scripts": {
+    "tocjs:patch-package-json": "pnpx patch-package-json clean-stack",
+    "prepare": "node build-cjs.js",
+    "test": "pnpx jest",
+    "postpack": "pnpx jest"
+  },
+  "dependencies": {
+    "escape-string-regexp": "npm:@cjsa/escape-string-regexp@5.0.0"
+  }
+}

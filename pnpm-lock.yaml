@@ -220,6 +220,19 @@ importers:
       tsd: 0.14.0
       xo: 0.38.2
 
+  packages/clean-stack:
+    specifiers:
+      ava: ^3.15.0
+      escape-string-regexp: npm:@cjsa/escape-string-regexp@5.0.0
+      tsd: ^0.14.0
+      xo: ^0.38.2
+    dependencies:
+      escape-string-regexp: link:../escape-string-regexp
+    devDependencies:
+      ava: 3.15.0
+      tsd: 0.14.0
+      xo: 0.38.2
+
   packages/escape-string-regexp:
     specifiers:
       ava: ^3.15.0
