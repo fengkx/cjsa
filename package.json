@@ -8,6 +8,7 @@
     "add:package": "pnpm run --filter ./internals/scripts plop",
     "test": "pnpm -r run --filter ./packages --parallel --stream test",
     "clean:modules": "pnpm -r --filter ./modules exec -- git checkout -- .",
+    "prepublishOnly": "pnpx generate-readme",
     "publish": "pnpm --filter ./packages publish --dry-run --no-git-checks",
     "publish:prod": "pnpm --filter ./packages publish --no-git-checks"
   },
