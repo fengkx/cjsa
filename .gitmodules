@@ -19,3 +19,9 @@
 [submodule "modules/slash"]
 	path = modules/slash
 	url = https://github.com/sindresorhus/slash
+[submodule "modules/globby"]
+	path = modules/globby
+	url = https://github.com/sindresorhus/globby
+[submodule "modules/array-union"]
+	path = modules/array-union
+	url = https://github.com/sindresorhus/array-union

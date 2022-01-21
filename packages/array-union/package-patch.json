@@ -1,0 +1,12 @@
+{
+  "name": "@tocjs/array-union",
+  "type": "commonjs",
+  "exports": "./dist-cjs/index.cjs",
+  "files": ["dist-cjs/*"],
+  "scripts": {
+    "preinstall": "patch-package-json array-union",
+    "prepare": "node build-cjs.js",
+    "test": "pnpx jest",
+    "postpack": "pnpx jest"
+  }
+}
