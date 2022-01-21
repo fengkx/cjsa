@@ -34,3 +34,6 @@
 [submodule "modules/escape-goat"]
 	path = modules/escape-goat
 	url = https://github.com/sindresorhus/escape-goat
+[submodule "modules/lowercase-keys"]
+	path = modules/lowercase-keys
+	url = https://github.com/sindresorhus/lowercase-keys
