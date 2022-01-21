@@ -1,4 +1,11 @@
+name: nvchecker
+
 on:
+  push:
+    paths:
+      - .github/workflows/nvchecker.yaml
+    branches:
+      - master
   schedule:
     - cron: "0 3,10 * * *"
 
