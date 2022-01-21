@@ -11,7 +11,7 @@ async function main() {
     try {
         await $`pnpx generate-readme`
         await $`pnpm run publish`
-        await $`pnpm run publish:prod`
+        // await $`pnpm run publish:prod`
         if (!!process.env.GITHUB_WORKFLOW && !!process.env.SECRET_GITHUB_TOKEN) {
             await $`git push --follow-tags`
         }
