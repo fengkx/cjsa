@@ -2,7 +2,7 @@
 
 > Bundle commonjs package for **Pure ESM** modules
 
-Sometime we need to use commonjs module and we also want to have an updated and well maintain package
+Sometime we need to use commonjs module and we also want to have an updated and well maintain commonjs package
 
 ## How it works
 
@@ -17,7 +17,7 @@ After bundling the package, packages `@cjsa/*` will be published to npm. testing
 
 ## Contribute
 
-See [./CONTRIBUTING.md]
+See [CONTRIBUTING.md](./CONTRIBUTING.md)
 
 # License
 
