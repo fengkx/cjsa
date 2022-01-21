@@ -11,7 +11,8 @@
   },
   "bin": {
     "patch-package-json": "./patch-package-json.js",
-    "generate-readme": "./generate-readme.js"
+    "generate-readme": "./generate-readme.js",
+    "package-up-version": "./package-up-version.js"
   },
   "dependencies": {
     "@cjsa/internals-shared": "workspace:*",
