@@ -6,6 +6,9 @@
   "type": "commonjs",
   "author": "fengkx",
   "license": "GPL-3.0",
+  "scripts": {
+    "plop": "plop"
+  },
   "bin": {
     "patch-package-json": "./patch-package-json.js",
     "generate-readme": "./generate-readme.js"
