@@ -6,6 +6,9 @@
   "exports": {
     "./const": {
       "require": "./const.js"
+    },
+    "./utils": {
+      "require": "./utils.js"
     }
   },
   "scripts": {

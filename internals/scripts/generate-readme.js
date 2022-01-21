@@ -1,12 +1,14 @@
 const { $, fs, path, cd } = require("zx");
 const {
-  absPackagesDir,
+  absPackagesDir
 } = require("@cjsa/internals-shared/const");
+const {
+    getAllPackages
+} = require("@cjsa/internals-shared/utils")
 
 async function main() {
   try {
-    const files = await (await fs.readdir(absPackagesDir, {withFileTypes: true}));
-    const packages = files.filter(f => f.isDirectory()).map(d => d.name);
+    const packages = await getAllPackages();
     await Promise.all(packages.map((pkg) => generateReadme(pkg)))
     cd(absPackagesDir);
     await $`pnpx prettier -w **/*.md`
