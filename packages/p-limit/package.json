@@ -1,5 +1,5 @@
 {
-  "name": "@tocjs/p-limit",
+  "name": "@cjsa/p-limit",
   "version": "4.0.0",
   "description": "Run multiple promise-returning & async functions with limited concurrency",
   "license": "MIT",
@@ -17,6 +17,7 @@
   },
   "scripts": {
     "test": "jest",
+    "tocjs:patch-package-json": "pnpx patch-package-json p-limit",
     "prepare": "node build-cjs.js",
     "postpack": "jest"
   },
@@ -41,7 +42,7 @@
     "bluebird"
   ],
   "dependencies": {
-    "yocto-queue": "npm:@tocjs/yocto-queue@^1.0.0"
+    "yocto-queue": "npm:@cjsa/yocto-queue@^1.0.0"
   },
   "devDependencies": {
     "ava": "^3.15.0",

@@ -1,5 +1,5 @@
 {
-  "name": "@tocjs/locate-path",
+  "name": "@cjsa/locate-path",
   "type": "commonjs",
   "exports": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
@@ -10,6 +10,6 @@
     "postpack": "jest"
   },
   "dependencies": {
-    "p-locate": "npm:@tocjs/p-locate"
+    "p-locate": "npm:@cjsa/p-locate"
   }
 }

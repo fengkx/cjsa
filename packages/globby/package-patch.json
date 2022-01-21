@@ -1,5 +1,5 @@
 {
-  "name": "@tocjs/globby",
+  "name": "@cjsa/globby",
   "type": "commonjs",
   "exports": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
@@ -10,7 +10,7 @@
     "postpack": "pnpx jest"
   },
   "dependencies": {
-    "array-union": "npm:@tocjs/array-union@^3.0.1",
-    "slash": "npm:@tocjs/slash@^4.0.0"
+    "array-union": "npm:@cjsa/array-union@^3.0.1",
+    "slash": "npm:@cjsa/slash@^4.0.0"
   }
 }

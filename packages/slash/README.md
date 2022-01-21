@@ -1,12 +1,12 @@
-# @tocjs/slash@4.0.0
+# @cjsa/slash@1.0.0
 
-Source Code: https://github.com/fengkx/tocjs/tree/master/packages/slash
+Source Code: https://github.com/fengkx/cjsa/tree/master/packages/slash
 
-You can find usage(exports) in [unit test](https://github.com/fengkx/tocjs/tree/master/packages/slash/test/pkg.test.js)
+You can find usage(exports) in [unit test](https://github.com/fengkx/cjsa/tree/master/packages/slash/test/pkg.test.js)
 
 ---
 
-Created by [tocjs](https://github.com/fengkx/tocjs/)
+Created by [cjsa](https://github.com/fengkx/cjsa/)
 
-Original package: https://www.npmjs.com/package/slash/v/4.0.0
+Original package: https://www.npmjs.com/package/slash/v/1.0.0
 License: MIT

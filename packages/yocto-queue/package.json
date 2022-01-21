@@ -1,5 +1,5 @@
 {
-  "name": "@tocjs/yocto-queue",
+  "name": "@cjsa/yocto-queue",
   "version": "1.0.0",
   "description": "Tiny queue data structure",
   "license": "MIT",
@@ -17,9 +17,10 @@
   },
   "scripts": {
     "//test": "xo && ava && tsd",
-    "test": "jest",
+    "test": "pnpx jest",
+    "tocjs:patch-package-json": "pnpx patch-package-json yocto-queue",
     "prepare": "node build-cjs.js",
-    "postpack": "jest"
+    "postpack": "pnpx jest"
   },
   "files": [
     "dist-cjs/*"

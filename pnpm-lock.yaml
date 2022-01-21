@@ -4,8 +4,8 @@ importers:
 
   .:
     specifiers:
-      '@tocjs/internals-scripts': workspace:*
-      '@tocjs/internals-shared': workspace:*
+      '@cjsa/internals-scripts': workspace:*
+      '@cjsa/internals-shared': workspace:*
       jest: ^27.4.7
       prettier: ^2.5.1
       rollup: ^2.64.0
@@ -13,8 +13,8 @@ importers:
       typescript: ^4.5.4
       zx: ^4.3.0
     dependencies:
-      '@tocjs/internals-scripts': link:internals/scripts
-      '@tocjs/internals-shared': link:internals/shared
+      '@cjsa/internals-scripts': link:internals/scripts
+      '@cjsa/internals-shared': link:internals/shared
     devDependencies:
       jest: 27.4.7
       prettier: 2.5.1
@@ -25,12 +25,12 @@ importers:
 
   internals/scripts:
     specifiers:
-      '@tocjs/internals-shared': workspace:*
+      '@cjsa/internals-shared': workspace:*
       json-merge-patch: ^1.0.2
       plop: ^3.0.5
       zx: ^4.3.0
     dependencies:
-      '@tocjs/internals-shared': link:../shared
+      '@cjsa/internals-shared': link:../shared
       json-merge-patch: 1.0.2
       plop: 3.0.5
       zx: 4.3.0

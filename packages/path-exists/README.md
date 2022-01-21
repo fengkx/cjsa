@@ -1,12 +1,12 @@
-# @tocjs/path-exists@5.0.0
+# @cjsa/path-exists@5.0.0
 
-Source Code: https://github.com/fengkx/tocjs/tree/master/packages/path-exists
+Source Code: https://github.com/fengkx/cjsa/tree/master/packages/path-exists
 
-You can find usage(exports) in [unit test](https://github.com/fengkx/tocjs/tree/master/packages/path-exists/test/pkg.test.js)
+You can find usage(exports) in [unit test](https://github.com/fengkx/cjsa/tree/master/packages/path-exists/test/pkg.test.js)
 
 ---
 
-Created by [tocjs](https://github.com/fengkx/tocjs/)
+Created by [cjsa](https://github.com/fengkx/cjsa/)
 
 Original package: https://www.npmjs.com/package/path-exists/v/5.0.0
 License: MIT

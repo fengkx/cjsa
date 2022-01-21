@@ -1,5 +1,5 @@
 {
-  "name": "@tocjs/array-union",
+  "name": "@cjsa/array-union",
   "version": "3.0.1",
   "description": "Create an array of unique values, in order, from the input arrays",
   "license": "MIT",
@@ -17,6 +17,7 @@
   },
   "scripts": {
     "test": "pnpx jest",
+    "tocjs:patch-package-json": "pnpx patch-package-json array-union",
     "prepare": "node build-cjs.js",
     "postpack": "pnpx jest"
   },

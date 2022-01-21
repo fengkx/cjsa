@@ -1,16 +1,16 @@
 {
-  "name": "@tocjs/find-up",
+  "name": "@cjsa/find-up",
   "type": "commonjs",
   "exports": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
   "scripts": {
     "tocjs:patch-package-json": "pnpx patch-package-json find-up",
     "prepare": "node build-cjs.js",
-    "test": "jest",
-    "postpack": "jest"
+    "test": "pnpx jest",
+    "postpack": "pnpx jest"
   },
   "dependencies": {
-    "locate-path": "npm:@tocjs/locate-path",
-    "path-exists": "npm:@tocjs/path-exists"
+    "locate-path": "npm:@cjsa/locate-path",
+    "path-exists": "npm:@cjsa/path-exists"
   }
 }

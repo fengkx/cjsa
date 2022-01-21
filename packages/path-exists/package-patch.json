@@ -1,5 +1,5 @@
 {
-  "name": "@tocjs/path-exists",
+  "name": "@cjsa/path-exists",
   "type": "commonjs",
   "exports": "./dist-cjs/index.js",
   "files": ["dist-cjs/*"],

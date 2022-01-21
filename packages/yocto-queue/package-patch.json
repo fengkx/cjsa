@@ -1,12 +1,12 @@
 {
-  "name": "@tocjs/yocto-queue",
+  "name": "@cjsa/yocto-queue",
   "type": "commonjs",
   "exports": "./dist-cjs/index.js",
   "files": ["dist-cjs/*"],
   "scripts": {
     "tocjs:patch-package-json": "pnpx patch-package-json yocto-queue",
     "prepare": "node build-cjs.js",
-    "test": "jest",
-    "postpack": "jest"
+    "test": "pnpx jest",
+    "postpack": "pnpx jest"
   }
 }

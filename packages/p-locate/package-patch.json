@@ -1,5 +1,5 @@
 {
-  "name": "@tocjs/p-locate",
+  "name": "@cjsa/p-locate",
   "type": "commonjs",
   "exports": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
@@ -10,6 +10,6 @@
     "postpack": "jest"
   },
   "dependencies": {
-    "p-limit": "npm:@tocjs/p-limit@^4.0.0"
+    "p-limit": "npm:@cjsa/p-limit@^4.0.0"
   }
 }

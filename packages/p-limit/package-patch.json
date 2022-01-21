@@ -1,5 +1,5 @@
 {
-  "name": "@tocjs/p-limit",
+  "name": "@cjsa/p-limit",
   "type": "commonjs",
   "exports": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
@@ -10,6 +10,6 @@
     "postpack": "jest"
   },
   "dependencies": {
-    "yocto-queue": "npm:@tocjs/yocto-queue@^1.0.0"
+    "yocto-queue": "npm:@cjsa/yocto-queue@^1.0.0"
   }
 }

@@ -1,5 +1,5 @@
 {
-  "name": "@tocjs/path-exists",
+  "name": "@cjsa/path-exists",
   "version": "5.0.0",
   "description": "Check if a path exists",
   "license": "MIT",
@@ -16,6 +16,7 @@
   },
   "scripts": {
     "test": "jest",
+    "tocjs:patch-package-json": "pnpx patch-package-json path-exists",
     "prepare": "node build-cjs.js",
     "postpack": "jest"
   },

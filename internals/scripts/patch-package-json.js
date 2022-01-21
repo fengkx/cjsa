@@ -3,7 +3,7 @@ const mergePatch = require("json-merge-patch");
 const {
   absModulesDir,
   absPackagesDir,
-} = require("@tocjs/internals-shared/const");
+} = require("@cjsa/internals-shared/const");
 
 async function main() {
   const packageName = argv._[0];

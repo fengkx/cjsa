@@ -1,7 +1,7 @@
 const { $, fs, path, cd } = require("zx");
 const {
   absPackagesDir,
-} = require("@tocjs/internals-shared/const");
+} = require("@cjsa/internals-shared/const");
 
 async function main() {
   try {
@@ -21,12 +21,12 @@ async function generateReadme(pkg) {
     const pkgJson = await fs.readJson(path.join(absPackagesDir, pkg, 'package.json'));
     const content =`
 # ${pkgJson.name}@${pkgJson.version}
-Source Code: https://github.com/fengkx/tocjs/tree/master/packages/${pkg}
+Source Code: https://github.com/fengkx/cjsa/tree/master/packages/${pkg}
 
-You can find usage(exports) in [unit test](https://github.com/fengkx/tocjs/tree/master/packages/${pkg}/test/pkg.test.js)
+You can find usage(exports) in [unit test](https://github.com/fengkx/cjsa/tree/master/packages/${pkg}/test/pkg.test.js)
 
 -----
-Created by [tocjs](https://github.com/fengkx/tocjs/)
+Created by [cjsa](https://github.com/fengkx/cjsa/)
 
 Original package: https://www.npmjs.com/package/${pkg}/v/${pkgJson.version}
 License: ${pkgJson.license}

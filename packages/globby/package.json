@@ -1,5 +1,5 @@
 {
-  "name": "@tocjs/globby",
+  "name": "@cjsa/globby",
   "version": "12.2.0",
   "description": "User-friendly glob matching",
   "license": "MIT",
@@ -18,6 +18,7 @@
   "scripts": {
     "bench": "npm update glob-stream fast-glob && matcha bench.js",
     "test": "pnpx jest",
+    "tocjs:patch-package-json": "pnpx patch-package-json globby",
     "prepare": "node build-cjs.js",
     "postpack": "pnpx jest"
   },
@@ -58,12 +59,12 @@
     "git"
   ],
   "dependencies": {
-    "array-union": "npm:@tocjs/array-union@^3.0.1",
+    "array-union": "npm:@cjsa/array-union@^3.0.1",
     "dir-glob": "^3.0.1",
     "fast-glob": "^3.2.7",
     "ignore": "^5.1.9",
     "merge2": "^1.4.1",
-    "slash": "npm:@tocjs/slash@^4.0.0"
+    "slash": "npm:@cjsa/slash@^4.0.0"
   },
   "devDependencies": {
     "@types/node": "^16.11.11",

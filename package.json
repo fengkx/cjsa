@@ -32,7 +32,7 @@
     "zx": "^4.3.0"
   },
   "dependencies": {
-    "@tocjs/internals-scripts": "workspace:*",
-    "@tocjs/internals-shared": "workspace:*"
+    "@cjsa/internals-scripts": "workspace:*",
+    "@cjsa/internals-shared": "workspace:*"
   }
 }

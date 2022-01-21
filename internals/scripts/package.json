@@ -1,5 +1,5 @@
 {
-  "name": "@tocjs/internals-scripts",
+  "name": "@cjsa/internals-scripts",
   "version": "0.0.1",
   "description": "internal scripts",
   "private": true,
@@ -14,7 +14,7 @@
     "generate-readme": "./generate-readme.js"
   },
   "dependencies": {
-    "@tocjs/internals-shared": "workspace:*",
+    "@cjsa/internals-shared": "workspace:*",
     "json-merge-patch": "^1.0.2",
     "plop": "^3.0.5",
     "zx": "^4.3.0"

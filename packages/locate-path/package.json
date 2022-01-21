@@ -1,5 +1,5 @@
 {
-  "name": "@tocjs/locate-path",
+  "name": "@cjsa/locate-path",
   "version": "7.0.0",
   "description": "Get the first path that exists on disk of multiple paths",
   "license": "MIT",
@@ -17,6 +17,7 @@
   },
   "scripts": {
     "test": "jest",
+    "tocjs:patch-package-json": "pnpx patch-package-json locate-path",
     "prepare": "node build-cjs.js",
     "postpack": "jest"
   },
@@ -39,7 +40,7 @@
     "iterator"
   ],
   "dependencies": {
-    "p-locate": "npm:@tocjs/p-locate"
+    "p-locate": "npm:@cjsa/p-locate"
   },
   "devDependencies": {
     "ava": "^3.15.0",

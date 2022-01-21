@@ -3,7 +3,7 @@ const { $, fs, cd } = require("zx");
 const {
   absModulesDir,
   absPackagesDir,
-} = require("@tocjs/internals-shared/const");
+} = require("@cjsa/internals-shared/const");
 
 const packageName = "p-locate";
 

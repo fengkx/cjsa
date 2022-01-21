@@ -1,5 +1,5 @@
 {
-  "name": "@tocjs/p-locate",
+  "name": "@cjsa/p-locate",
   "version": "6.0.0",
   "description": "Get the first fulfilled promise that satisfies the provided testing function",
   "license": "MIT",
@@ -17,6 +17,7 @@
   },
   "scripts": {
     "test": "jest",
+    "tocjs:patch-package-json": "pnpx patch-package-json p-locate",
     "prepare": "node build-cjs.js",
     "postpack": "jest"
   },
@@ -44,7 +45,7 @@
     "bluebird"
   ],
   "dependencies": {
-    "p-limit": "npm:@tocjs/p-limit@^4.0.0"
+    "p-limit": "npm:@cjsa/p-limit@^4.0.0"
   },
   "devDependencies": {
     "ava": "^3.15.0",

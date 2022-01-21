@@ -1,5 +1,5 @@
 {
-  "name": "@tocjs/array-union",
+  "name": "@cjsa/array-union",
   "type": "commonjs",
   "exports": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
