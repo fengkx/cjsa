@@ -4,10 +4,10 @@
   "exports": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
   "scripts": {
-    "preinstall": "patch-package-json {{name}}",
+    "preinstall": "pnpx patch-package-json {{name}}",
     "prepare": "node build-cjs.js",
-    "test": "jest",
-    "postpack": "jest"
+    "test": "pnpx jest",
+    "postpack": "pnpx jest"
   },
   "dependencies": {
     // overrride
