@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "description": "internal scripts",
   "private": true,
+  "type": "commonjs",
   "author": "fengkx",
   "license": "GPL-3.0",
   "bin": {
@@ -12,6 +13,7 @@
   "dependencies": {
     "@tocjs/internals-shared": "workspace:*",
     "json-merge-patch": "^1.0.2",
+    "plop": "^3.0.5",
     "zx": "^4.3.0"
   }
 }

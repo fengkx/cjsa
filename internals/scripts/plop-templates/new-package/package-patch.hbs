@@ -1,0 +1,15 @@
+{
+  "name": "@tocjs/{{name}}",
+  "type": "commonjs",
+  "exports": "./dist-cjs/index.cjs",
+  "files": ["dist-cjs/*"],
+  "scripts": {
+    "preinstall": "patch-package-json {{name}}",
+    "prepare": "node build-cjs.js",
+    "test": "jest",
+    "postpack": "jest"
+  },
+  "dependencies": {
+    // overrride
+  }
+}
