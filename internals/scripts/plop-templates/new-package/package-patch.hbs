@@ -1,15 +1,5 @@
-{
-  "name": "@cjsa/{{name}}",
-  "type": "commonjs",
-  "exports": "./dist-cjs/index.cjs",
-  "files": ["dist-cjs/*"],
-  "scripts": {
-    "tocjs:patch-package-json": "pnpx patch-package-json {{name}}",
-    "prepare": "node build-cjs.js",
-    "test": "pnpx jest",
-    "postpack": "pnpx jest"
-  },
-  "dependencies": {
-    // overrride
-  }
-}
+{ "name": "@cjsa/{{name}}", "type": "commonjs", "exports":
+"./dist-cjs/index.cjs", "files": ["dist-cjs/*"], "scripts": {
+"tocjs:patch-package-json": "pnpx patch-package-json
+{{name}}", "prepare": "node build-cjs.js", "test": "pnpx jest", "postpack":
+"pnpx jest" }, "dependencies": { // overrride } }
