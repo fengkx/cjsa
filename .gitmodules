@@ -37,3 +37,6 @@
 [submodule "modules/lowercase-keys"]
 	path = modules/lowercase-keys
 	url = https://github.com/sindresorhus/lowercase-keys
+[submodule "modules/dot-prop"]
+	path = modules/dot-prop
+	url = https://github.com/sindresorhus/dot-prop

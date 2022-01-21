@@ -1,0 +1,12 @@
+{
+  "name": "@cjsa/dot-prop",
+  "type": "commonjs",
+  "exports": "./dist-cjs/index.cjs",
+  "files": ["dist-cjs/*"],
+  "scripts": {
+    "tocjs:patch-package-json": "pnpx patch-package-json dot-prop",
+    "prepare": "node build-cjs.js",
+    "test": "pnpx jest",
+    "postpack": "pnpx jest"
+  }
+}

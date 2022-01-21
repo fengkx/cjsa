@@ -1,0 +1,50 @@
+{
+  "name": "@cjsa/dot-prop",
+  "version": "7.0.0",
+  "description": "Get, set, or delete a property from a nested object using a dot path",
+  "license": "MIT",
+  "repository": "sindresorhus/dot-prop",
+  "funding": "https://github.com/sponsors/sindresorhus",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "https://sindresorhus.com"
+  },
+  "type": "commonjs",
+  "exports": "./dist-cjs/index.cjs",
+  "engines": {
+    "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
+  },
+  "scripts": {
+    "test": "pnpx jest",
+    "bench": "node benchmark.js",
+    "tocjs:patch-package-json": "pnpx patch-package-json dot-prop",
+    "prepare": "node build-cjs.js",
+    "postpack": "pnpx jest"
+  },
+  "files": [
+    "dist-cjs/*"
+  ],
+  "keywords": [
+    "object",
+    "prop",
+    "property",
+    "dot",
+    "path",
+    "get",
+    "set",
+    "delete",
+    "access",
+    "notation",
+    "dotty"
+  ],
+  "dependencies": {
+    "type-fest": "^2.10.0"
+  },
+  "devDependencies": {
+    "ava": "^4.0.1",
+    "benchmark": "^2.1.4",
+    "tsd": "^0.19.1",
+    "xo": "^0.47.0"
+  }
+}
