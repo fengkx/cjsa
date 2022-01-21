@@ -18,7 +18,6 @@
   "scripts": {
     "//test": "xo && ava && tsd",
     "test": "jest",
-    "preinstall": "patch-package-json yocto-queue",
     "prepare": "node build-cjs.js",
     "postpack": "jest"
   },

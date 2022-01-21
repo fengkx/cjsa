@@ -18,7 +18,6 @@
   "scripts": {
     "bench": "npm update glob-stream fast-glob && matcha bench.js",
     "test": "pnpx jest",
-    "preinstall": "pnpx patch-package-json globby",
     "prepare": "node build-cjs.js",
     "postpack": "pnpx jest"
   },

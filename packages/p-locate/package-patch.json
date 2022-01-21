@@ -4,7 +4,7 @@
   "exports": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
   "scripts": {
-    "preinstall": "patch-package-json p-locate",
+    "tocjs:patch-package-json": "pnpx patch-package-json p-locate",
     "prepare": "node build-cjs.js",
     "test": "jest",
     "postpack": "jest"

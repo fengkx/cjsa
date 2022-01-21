@@ -16,7 +16,6 @@
   },
   "scripts": {
     "test": "jest",
-    "preinstall": "patch-package-json path-exists",
     "prepare": "node build-cjs.js",
     "postpack": "jest"
   },

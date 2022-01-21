@@ -17,7 +17,6 @@
   },
   "scripts": {
     "test": "jest",
-    "preinstall": "patch-package-json p-limit",
     "prepare": "node build-cjs.js",
     "postpack": "jest"
   },

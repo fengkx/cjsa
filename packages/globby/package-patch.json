@@ -4,7 +4,7 @@
   "exports": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
   "scripts": {
-    "preinstall": "pnpx patch-package-json globby",
+    "tocjs:patch-package-json": "pnpx patch-package-json globby",
     "prepare": "node build-cjs.js",
     "test": "pnpx jest",
     "postpack": "pnpx jest"

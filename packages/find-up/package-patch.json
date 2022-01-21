@@ -4,7 +4,7 @@
   "exports": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
   "scripts": {
-    "preinstall": "patch-package-json find-up",
+    "tocjs:patch-package-json": "pnpx patch-package-json find-up",
     "prepare": "node build-cjs.js",
     "test": "jest",
     "postpack": "jest"

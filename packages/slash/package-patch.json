@@ -1,10 +1,11 @@
 {
   "name": "@tocjs/slash",
   "type": "commonjs",
+  "version": "1.0.0",
   "exports": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
   "scripts": {
-    "preinstall": "patch-package-json slash",
+    "tocjs:patch-package-json": "pnpx patch-package-json slash",
     "prepare": "node build-cjs.js",
     "test": "pnpx jest",
     "postpack": "pnpx jest"

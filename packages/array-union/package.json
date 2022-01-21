@@ -17,7 +17,6 @@
   },
   "scripts": {
     "test": "pnpx jest",
-    "preinstall": "patch-package-json array-union",
     "prepare": "node build-cjs.js",
     "postpack": "pnpx jest"
   },

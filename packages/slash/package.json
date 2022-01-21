@@ -1,6 +1,6 @@
 {
   "name": "@tocjs/slash",
-  "version": "4.0.0",
+  "version": "1.0.0",
   "description": "Convert Windows backslash paths to slash paths",
   "license": "MIT",
   "repository": "sindresorhus/slash",
@@ -17,7 +17,6 @@
   },
   "scripts": {
     "test": "pnpx jest",
-    "preinstall": "patch-package-json slash",
     "prepare": "node build-cjs.js",
     "postpack": "pnpx jest"
   },
