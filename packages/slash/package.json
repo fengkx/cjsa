@@ -16,10 +16,10 @@
     "node": ">=12"
   },
   "scripts": {
-    "test": "jest",
+    "test": "pnpx jest",
     "preinstall": "patch-package-json slash",
     "prepare": "node build-cjs.js",
-    "postpack": "jest"
+    "postpack": "pnpx jest"
   },
   "files": [
     "dist-cjs/*"

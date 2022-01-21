@@ -6,7 +6,7 @@
   "scripts": {
     "preinstall": "patch-package-json slash",
     "prepare": "node build-cjs.js",
-    "test": "jest",
-    "postpack": "jest"
+    "test": "pnpx jest",
+    "postpack": "pnpx jest"
   }
 }
