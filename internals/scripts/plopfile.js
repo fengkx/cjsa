@@ -1,8 +1,5 @@
 require("zx/globals");
-const {
-  absPackagesDir,
-  absModulesDir,
-} = require("@cjsa/internals-shared/const");
+const { absPackagesDir } = require("@cjsa/internals-shared/const");
 
 module.exports = function (plop) {
   plop.setGenerator("package name", {

@@ -1,9 +1,5 @@
-const { path } = require("zx");
-const { $, fs, cd } = require("zx");
-const {
-  absModulesDir,
-  absPackagesDir,
-} = require("@cjsa/internals-shared/const");
+require("zx/globals");
+const { absModulesDir } = require("@cjsa/internals-shared/const");
 
 const packageName = "locate-path";
 

@@ -1,4 +1,4 @@
-const { $, argv, chalk, fs, path } = require("zx");
+require("zx/globals");
 const mergePatch = require("json-merge-patch");
 const {
   absModulesDir,

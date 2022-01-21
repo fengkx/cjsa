@@ -1,8 +1,5 @@
 require("zx/globals");
-const {
-  absModulesDir,
-  absPackagesDir,
-} = require("@cjsa/internals-shared/const");
+const { absModulesDir } = require("@cjsa/internals-shared/const");
 
 const packageName = "globby";
 

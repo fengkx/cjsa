@@ -28,6 +28,7 @@
   },
   "homepage": "https://github.com/fengkx/tocjs#readme",
   "devDependencies": {
+    "eslint": "^8.7.0",
     "jest": "^27.4.7",
     "nano-staged": "^0.5.0",
     "prettier": "^2.5.1",
@@ -42,6 +43,7 @@
     "@cjsa/internals-shared": "workspace:*"
   },
   "nano-staged": {
+    "*.{js,ts}": "eslint --fix",
     "*.{js,yaml,json,md}": "prettier --write"
   },
   "simple-git-hooks": {

@@ -5,6 +5,7 @@ importers:
     specifiers:
       "@cjsa/internals-scripts": workspace:*
       "@cjsa/internals-shared": workspace:*
+      eslint: ^8.7.0
       jest: ^27.4.7
       nano-staged: ^0.5.0
       prettier: ^2.5.1
@@ -17,6 +18,7 @@ importers:
       "@cjsa/internals-scripts": link:internals/scripts
       "@cjsa/internals-shared": link:internals/shared
     devDependencies:
+      eslint: 8.7.0
       jest: 27.4.7
       nano-staged: 0.5.0
       prettier: 2.5.1
