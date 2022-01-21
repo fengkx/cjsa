@@ -16,3 +16,6 @@
 [submodule "modules/path-exists"]
 	path = modules/path-exists
 	url = https://github.com/sindresorhus/path-exists
+[submodule "modules/slash"]
+	path = modules/slash
+	url = https://github.com/sindresorhus/slash
