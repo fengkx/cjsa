@@ -1,7 +1,6 @@
 {
   "name": "@cjsa/slash",
   "type": "commonjs",
-  "version": "1.0.0",
   "exports": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
   "scripts": {
