@@ -69,15 +69,16 @@ importers:
 
   modules/globby:
     specifiers:
-      '@globby/main-branch': sindresorhus/globby#main
       '@types/node': ^16.11.11
+      array-union: ^3.0.1
       ava: ^3.15.0
-      benchmark: 2.1.4
       dir-glob: ^3.0.1
       fast-glob: ^3.2.7
       get-stream: ^6.0.1
       glob-stream: ^7.0.0
+      globby: sindresorhus/globby#main
       ignore: ^5.1.9
+      matcha: ^0.7.0
       merge2: ^1.4.1
       rimraf: ^3.0.2
       slash: ^4.0.0
@@ -85,18 +86,19 @@ importers:
       typescript: ^4.5.2
       xo: ^0.47.0
     dependencies:
+      array-union: link:../array-union
       dir-glob: 3.0.1
       fast-glob: 3.2.11
       ignore: 5.2.0
       merge2: 1.4.1
       slash: link:../slash
     devDependencies:
-      '@globby/main-branch': github.com/sindresorhus/globby/04fbd5b91df4b9504143bd1150289aee47231dc3
       '@types/node': 16.11.21
       ava: 3.15.0
-      benchmark: 2.1.4
       get-stream: 6.0.1
       glob-stream: 7.0.0
+      globby: github.com/sindresorhus/globby/04fbd5b91df4b9504143bd1150289aee47231dc3
+      matcha: 0.7.0
       rimraf: 3.0.2
       tsd: 0.19.1
       typescript: 4.5.4
@@ -1845,13 +1847,6 @@ packages:
 
   /base64-js/1.5.1:
     resolution: {integrity: sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==}
-
-  /benchmark/2.1.4:
-    resolution: {integrity: sha1-CfPeMckWQl1JjMLuVloOvzwqVik=}
-    dependencies:
-      lodash: 4.17.21
-      platform: 1.3.6
-    dev: true
 
   /binary-extensions/2.2.0:
     resolution: {integrity: sha512-jDctJ/IVQbZoJykoeHbhXpOlNBqGNcwXJKJog42E5HDPUwQTSdjCHdihjj0DlnheQ7blbT6dHOafNAiS8ooQKA==}
@@ -6690,10 +6685,6 @@ packages:
     engines: {node: '>=10'}
     dependencies:
       find-up: 5.0.0
-    dev: true
-
-  /platform/1.3.6:
-    resolution: {integrity: sha512-fnWVljUchTro6RiCFvCXBbNhJc2NijN7oIQxbwsyL0buWJPG85v81ehlHI9fXrJsMNgTofEoWIQeClKpgxFLrg==}
     dev: true
 
   /plop/3.0.5:
