@@ -1,0 +1,42 @@
+{
+  "name": "@cjsa/escape-string-regexp",
+  "version": "5.0.0",
+  "description": "Escape RegExp special characters",
+  "license": "MIT",
+  "repository": "sindresorhus/escape-string-regexp",
+  "funding": "https://github.com/sponsors/sindresorhus",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "https://sindresorhus.com"
+  },
+  "type": "commonjs",
+  "exports": "./dist-cjs/index.cjs",
+  "engines": {
+    "node": ">=12"
+  },
+  "scripts": {
+    "test": "pnpx jest",
+    "tocjs:patch-package-json": "pnpx patch-package-json escape-string-regexp",
+    "prepare": "node build-cjs.js",
+    "postpack": "pnpx jest"
+  },
+  "files": [
+    "dist-cjs/*"
+  ],
+  "keywords": [
+    "escape",
+    "regex",
+    "regexp",
+    "regular",
+    "expression",
+    "string",
+    "special",
+    "characters"
+  ],
+  "devDependencies": {
+    "ava": "^3.15.0",
+    "tsd": "^0.14.0",
+    "xo": "^0.38.2"
+  }
+}

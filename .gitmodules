@@ -25,3 +25,9 @@
 [submodule "modules/array-union"]
 	path = modules/array-union
 	url = https://github.com/sindresorhus/array-union
+[submodule "modules/clean-stack"]
+	path = modules/clean-stack
+	url = https://github.com/sindresorhus/clean-stack
+[submodule "modules/escape-string-regexp"]
+	path = modules/escape-string-regexp
+	url = https://github.com/sindresorhus/escape-string-regexp

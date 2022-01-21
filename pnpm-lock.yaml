@@ -48,6 +48,29 @@ importers:
       tsd: 0.14.0
       xo: 0.38.2
 
+  modules/clean-stack:
+    specifiers:
+      ava: ^3.15.0
+      escape-string-regexp: 5.0.0
+      tsd: ^0.14.0
+      xo: ^0.38.2
+    dependencies:
+      escape-string-regexp: link:../escape-string-regexp
+    devDependencies:
+      ava: 3.15.0
+      tsd: 0.14.0
+      xo: 0.38.2
+
+  modules/escape-string-regexp:
+    specifiers:
+      ava: ^3.15.0
+      tsd: ^0.14.0
+      xo: ^0.38.2
+    devDependencies:
+      ava: 3.15.0
+      tsd: 0.14.0
+      xo: 0.38.2
+
   modules/find-up:
     specifiers:
       ava: ^3.15.0
@@ -188,6 +211,16 @@ importers:
       xo: 0.44.0
 
   packages/array-union:
+    specifiers:
+      ava: ^3.15.0
+      tsd: ^0.14.0
+      xo: ^0.38.2
+    devDependencies:
+      ava: 3.15.0
+      tsd: 0.14.0
+      xo: 0.38.2
+
+  packages/escape-string-regexp:
     specifiers:
       ava: ^3.15.0
       tsd: ^0.14.0
