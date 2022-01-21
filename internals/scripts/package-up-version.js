@@ -9,7 +9,7 @@ async function main() {
     await `git submodule update --init --recursive --remote`;
     await $`pnpm i`;
     try {
-
+        await $`pnpx generate-readme`
         await $`pnpm run publish`
         await $`pnpm run publish:prod`
         if (!!process.env.GITHUB_WORKFLOW && !!process.env.SECRET_GITHUB_TOKEN) {
