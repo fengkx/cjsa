@@ -1,0 +1,16 @@
+{
+  "name": "@tocjs/globby",
+  "type": "commonjs",
+  "exports": "./dist-cjs/index.cjs",
+  "files": ["dist-cjs/*"],
+  "scripts": {
+    "preinstall": "pnpx patch-package-json globby",
+    "prepare": "node build-cjs.js",
+    "test": "pnpx jest",
+    "postpack": "pnpx jest"
+  },
+  "dependencies": {
+    "array-union": "npm:@tocjs/array-union@^3.0.1",
+    "slash": "npm:@tocjs/slash@^4.0.0"
+  }
+}
