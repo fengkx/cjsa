@@ -52,5 +52,6 @@
     "time-span": "^5.0.0",
     "tsd": "^0.17.0",
     "xo": "^0.44.0"
-  }
+  },
+  "types": "./dist-cjs/index.d.ts"
 }

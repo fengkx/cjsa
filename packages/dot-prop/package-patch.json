@@ -1,6 +1,7 @@
 {
   "name": "@cjsa/dot-prop",
   "type": "commonjs",
+  "types": "./dist-cjs/index.d.ts",
   "exports": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
   "scripts": {

@@ -42,5 +42,6 @@
   },
   "browser": {
     "os": false
-  }
+  },
+  "types": "./dist-cjs/index.d.ts"
 }

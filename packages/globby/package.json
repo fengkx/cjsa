@@ -82,5 +82,6 @@
     "ignores": [
       "fixtures"
     ]
-  }
+  },
+  "types": "./dist-cjs/index.d.ts"
 }

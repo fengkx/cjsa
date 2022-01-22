@@ -44,5 +44,6 @@
     "compilerOptions": {
       "esModuleInterop": true
     }
-  }
+  },
+  "types": "./dist-cjs/index.d.ts"
 }
