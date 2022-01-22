@@ -40,3 +40,6 @@
 [submodule "modules/dot-prop"]
 	path = modules/dot-prop
 	url = https://github.com/sindresorhus/dot-prop
+[submodule "modules/arrify"]
+	path = modules/arrify
+	url = https://github.com/sindresorhus/arrify

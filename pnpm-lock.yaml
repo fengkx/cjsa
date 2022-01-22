@@ -53,6 +53,16 @@ importers:
       tsd: 0.14.0
       xo: 0.38.2
 
+  modules/arrify:
+    specifiers:
+      ava: ^3.15.0
+      tsd: ^0.14.0
+      xo: ^0.39.1
+    devDependencies:
+      ava: 3.15.0
+      tsd: 0.14.0
+      xo: 0.39.1
+
   modules/clean-stack:
     specifiers:
       ava: ^3.15.0
@@ -259,6 +269,16 @@ importers:
       ava: 3.15.0
       tsd: 0.14.0
       xo: 0.38.2
+
+  packages/arrify:
+    specifiers:
+      ava: ^3.15.0
+      tsd: ^0.14.0
+      xo: ^0.39.1
+    devDependencies:
+      ava: 3.15.0
+      tsd: 0.14.0
+      xo: 0.39.1
 
   packages/clean-stack:
     specifiers:
@@ -4223,6 +4243,22 @@ packages:
       typescript: 4.5.4
     dev: true
 
+  /eslint-config-xo-typescript/0.39.0_f42847b8cf886233a5558f157bd21430:
+    resolution:
+      {
+        integrity: sha512-UP4WqkmAKerYAhJTLdfrjBhD/nM1ePEugQNBJjzFfZv/lJ4yQjTzDBjfjsgluX1kz9PajRMaaipiWloJEODdGg==,
+      }
+    engines: { node: ">=10" }
+    peerDependencies:
+      "@typescript-eslint/eslint-plugin": ">=4.21.0"
+      eslint: ">=7.8.0"
+      typescript: ">=3.6.0"
+    dependencies:
+      "@typescript-eslint/eslint-plugin": 4.33.0_3289a875d95a672b97ebf589745c66ef
+      eslint: 7.32.0
+      typescript: 4.5.4
+    dev: true
+
   /eslint-config-xo-typescript/0.44.0_d3b4c2d4ac51f4275548d5d796aee5d5:
     resolution:
       {
@@ -4273,6 +4309,19 @@ packages:
     resolution:
       {
         integrity: sha512-+WyZTLWUJlvExFrBU/Ldw8AB/S0d3x+26JQdBWbcqig2ZaWh0zinYcHok+ET4IoPaEcRRf3FE9kjItNVjBwnAg==,
+      }
+    engines: { node: ">=10" }
+    peerDependencies:
+      eslint: ">=7.20.0"
+    dependencies:
+      confusing-browser-globals: 1.0.10
+      eslint: 7.32.0
+    dev: true
+
+  /eslint-config-xo/0.36.0_eslint@7.32.0:
+    resolution:
+      {
+        integrity: sha512-RCaqCyI38awe3qgiO0Z8CqHs9yw7dMKdV6ZRTFSR7lm0//370tbDEZaQBXnztgpwe5m6D+VvFWc3vLMP/W6EAg==,
       }
     engines: { node: ">=10" }
     peerDependencies:
@@ -4730,6 +4779,33 @@ packages:
       eslint: ">=7.17.0"
     dependencies:
       ci-info: 2.0.0
+      clean-regexp: 1.0.0
+      eslint: 7.32.0
+      eslint-template-visitor: 2.3.2_eslint@7.32.0
+      eslint-utils: 2.1.0
+      eslint-visitor-keys: 2.1.0
+      import-modules: 2.1.0
+      lodash: 4.17.21
+      pluralize: 8.0.0
+      read-pkg-up: 7.0.1
+      regexp-tree: 0.1.24
+      reserved-words: 0.1.2
+      safe-regex: 2.1.1
+      semver: 7.3.5
+    transitivePeerDependencies:
+      - supports-color
+    dev: true
+
+  /eslint-plugin-unicorn/30.0.0_eslint@7.32.0:
+    resolution:
+      {
+        integrity: sha512-ZKbE48Ep99z/3geLpkBfv+jNrzr2k7bLqCC/RfZOekZzAvn2/ECDE/d8zGdW1YxHmIC9pevQvm8Pl89v9GEIVw==,
+      }
+    engines: { node: ">=10" }
+    peerDependencies:
+      eslint: ">=7.23.0"
+    dependencies:
+      ci-info: 3.3.0
       clean-regexp: 1.0.0
       eslint: 7.32.0
       eslint-template-visitor: 2.3.2_eslint@7.32.0
@@ -11435,6 +11511,62 @@ packages:
       eslint-plugin-prettier: 3.4.1_f00f7e54b4b3cd43dd9e25d0d062b490
       eslint-plugin-promise: 4.3.1
       eslint-plugin-unicorn: 28.0.2_eslint@7.32.0
+      find-cache-dir: 3.3.2
+      find-up: 5.0.0
+      fs-extra: 9.1.0
+      get-stdin: 8.0.0
+      globby: 9.2.0
+      has-flag: 4.0.0
+      imurmurhash: 0.1.4
+      is-path-inside: 3.0.3
+      json-stable-stringify-without-jsonify: 1.0.1
+      json5: 2.2.0
+      lodash: 4.17.21
+      meow: 9.0.0
+      micromatch: 4.0.4
+      open-editor: 3.0.0
+      p-reduce: 2.1.0
+      path-exists: 4.0.0
+      prettier: 2.5.1
+      resolve-cwd: 3.0.0
+      resolve-from: 5.0.0
+      semver: 7.3.5
+      slash: 3.0.0
+      to-absolute-glob: 2.0.2
+      typescript: 4.5.4
+      update-notifier: 5.1.0
+    transitivePeerDependencies:
+      - supports-color
+      - webpack
+    dev: true
+
+  /xo/0.39.1:
+    resolution:
+      {
+        integrity: sha512-7OXtjkIfCMw3XfUPGInnUhxb/w/IHqATQM7XHOxwiJqbsQ44OYcLkTZb7mA35tDtqflnvWk88wD+IxiR/XJ5gQ==,
+      }
+    engines: { node: ">=10.18" }
+    hasBin: true
+    dependencies:
+      "@typescript-eslint/eslint-plugin": 4.33.0_3289a875d95a672b97ebf589745c66ef
+      "@typescript-eslint/parser": 4.33.0_eslint@7.32.0+typescript@4.5.4
+      arrify: 2.0.1
+      cosmiconfig: 7.0.1
+      debug: 4.3.3
+      eslint: 7.32.0
+      eslint-config-prettier: 8.3.0_eslint@7.32.0
+      eslint-config-xo: 0.36.0_eslint@7.32.0
+      eslint-config-xo-typescript: 0.39.0_f42847b8cf886233a5558f157bd21430
+      eslint-formatter-pretty: 4.1.0
+      eslint-import-resolver-webpack: 0.13.2_eslint-plugin-import@2.25.4
+      eslint-plugin-ava: 12.0.0_eslint@7.32.0
+      eslint-plugin-eslint-comments: 3.2.0_eslint@7.32.0
+      eslint-plugin-import: 2.25.4_eslint@7.32.0
+      eslint-plugin-no-use-extend-native: 0.5.0
+      eslint-plugin-node: 11.1.0_eslint@7.32.0
+      eslint-plugin-prettier: 3.4.1_6e6a25a49a944db0fa38418c3ba4bc86
+      eslint-plugin-promise: 5.2.0_eslint@7.32.0
+      eslint-plugin-unicorn: 30.0.0_eslint@7.32.0
       find-cache-dir: 3.3.2
       find-up: 5.0.0
       fs-extra: 9.1.0
