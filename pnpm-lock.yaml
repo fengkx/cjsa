@@ -225,6 +225,23 @@ importers:
       tsd: 0.18.0
       xo: 0.45.0
 
+  modules/p-event:
+    specifiers:
+      "@types/node": ^16.11.6
+      ava: ^3.15.0
+      delay: ^5.0.0
+      p-timeout: ^5.0.2
+      tsd: ^0.18.0
+      xo: ^0.45.0
+    dependencies:
+      p-timeout: link:../p-timeout
+    devDependencies:
+      "@types/node": 16.11.21
+      ava: 3.15.0
+      delay: 5.0.0
+      tsd: 0.18.0
+      xo: 0.45.0
+
   modules/p-filter:
     specifiers:
       ava: ^3.15.0
@@ -296,6 +313,24 @@ importers:
       in-range: 3.0.0
       random-int: 3.0.0
       time-span: 5.0.0
+      tsd: 0.14.0
+      xo: 0.38.2
+
+  modules/p-timeout:
+    specifiers:
+      ava: ^3.15.0
+      delay: ^5.0.0
+      in-range: ^3.0.0
+      p-cancelable: ^2.1.0
+      time-span: ^4.0.0
+      tsd: ^0.14.0
+      xo: ^0.38.2
+    devDependencies:
+      ava: 3.15.0
+      delay: 5.0.0
+      in-range: 3.0.0
+      p-cancelable: 2.1.1
+      time-span: 4.0.0
       tsd: 0.14.0
       xo: 0.38.2
 
@@ -508,6 +543,23 @@ importers:
       xo: ^0.45.0
     devDependencies:
       ava: 3.15.0
+      tsd: 0.18.0
+      xo: 0.45.0
+
+  packages/p-event:
+    specifiers:
+      "@types/node": ^16.11.6
+      ava: ^3.15.0
+      delay: ^5.0.0
+      p-timeout: npm:@cjsa/p-timeout@^5.0.2
+      tsd: ^0.18.0
+      xo: ^0.45.0
+    dependencies:
+      p-timeout: link:../p-timeout
+    devDependencies:
+      "@types/node": 16.11.21
+      ava: 3.15.0
+      delay: 5.0.0
       tsd: 0.18.0
       xo: 0.45.0
 

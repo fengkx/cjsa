@@ -61,3 +61,6 @@
 [submodule "modules/p-timeout"]
 	path = modules/p-timeout
 	url = https://github.com/sindresorhus/p-timeout
+[submodule "modules/p-event"]
+	path = modules/p-event
+	url = https://github.com/sindresorhus/p-event

@@ -1,0 +1,16 @@
+{
+  "name": "@cjsa/p-event",
+  "type": "commonjs",
+  "exports": "./dist-cjs/index.cjs",
+  "types": "./dist-cjs/index.d.ts",
+  "files": ["dist-cjs/*"],
+  "scripts": {
+    "tocjs:patch-package-json": "pnpx patch-package-json p-event",
+    "prepare": "node build-cjs.js",
+    "test": "pnpx jest",
+    "postpack": "pnpx jest"
+  },
+  "dependencies": {
+    "p-timeout": "npm:@cjsa/p-timeout@^5.0.2"
+  }
+}
