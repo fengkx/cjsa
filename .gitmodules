@@ -58,3 +58,6 @@
 [submodule "modules/p-filter"]
 	path = modules/p-filter
 	url = https://github.com/sindresorhus/p-filter
+[submodule "modules/p-timeout"]
+	path = modules/p-timeout
+	url = https://github.com/sindresorhus/p-timeout

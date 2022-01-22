@@ -585,6 +585,24 @@ importers:
       tsd: 0.14.0
       xo: 0.38.2
 
+  packages/p-timeout:
+    specifiers:
+      ava: ^3.15.0
+      delay: ^5.0.0
+      in-range: ^3.0.0
+      p-cancelable: ^2.1.0
+      time-span: ^4.0.0
+      tsd: ^0.14.0
+      xo: ^0.38.2
+    devDependencies:
+      ava: 3.15.0
+      delay: 5.0.0
+      in-range: 3.0.0
+      p-cancelable: 2.1.1
+      time-span: 4.0.0
+      tsd: 0.14.0
+      xo: 0.38.2
+
   packages/path-exists:
     specifiers:
       ava: ^3.15.0
@@ -3432,6 +3450,14 @@ packages:
       upper-case: 2.0.2
     dev: false
 
+  /convert-hrtime/3.0.0:
+    resolution:
+      {
+        integrity: sha512-7V+KqSvMiHp8yWDuwfww06XleMWVVB9b9tURBx+G7UTADuo5hYPuowKloz4OzOqbPezxgo+fdQ1522WzPG4OeA==,
+      }
+    engines: { node: ">=8" }
+    dev: true
+
   /convert-hrtime/5.0.0:
     resolution:
       {
@@ -6131,7 +6157,7 @@ packages:
       array-union: 1.0.2
       dir-glob: 2.2.2
       fast-glob: 2.2.7
-      glob: 7.1.6
+      glob: 7.2.0
       ignore: 4.0.6
       pify: 4.0.1
       slash: 2.0.0
@@ -9000,6 +9026,14 @@ packages:
     engines: { node: ">=6" }
     dev: true
 
+  /p-cancelable/2.1.1:
+    resolution:
+      {
+        integrity: sha512-BZOr3nRQHOntUjTrH8+Lh54smKHoHyur8We1V8DSMVrl5A2malOOwuJRnKRDjSnkoeBh4at6BwEnb5I7Jl31wg==,
+      }
+    engines: { node: ">=8" }
+    dev: true
+
   /p-defer/1.0.0:
     resolution: { integrity: sha1-n26xgvbJqozXQwBKfU+WsZaw+ww= }
     engines: { node: ">=4" }
@@ -10838,6 +10872,16 @@ packages:
     dependencies:
       readable-stream: 2.3.7
       xtend: 4.0.2
+    dev: true
+
+  /time-span/4.0.0:
+    resolution:
+      {
+        integrity: sha512-MyqZCTGLDZ77u4k+jqg4UlrzPTPZ49NDlaekU6uuFaJLzPIN1woaRXCbGeqOfxwc3Y37ZROGAJ614Rdv7Olt+g==,
+      }
+    engines: { node: ">=10" }
+    dependencies:
+      convert-hrtime: 3.0.0
     dev: true
 
   /time-span/5.0.0:
