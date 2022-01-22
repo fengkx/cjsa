@@ -13,7 +13,7 @@ Inside the `packages/{{package name}}` dir, There is a `build-cjs.js` that run t
 
 Some useful internals scripts in `internals/scripts` to help maintaining this packages
 
-After bundling the package, packages `@cjsa/*` will be published to npm. testing is enforce by using `prepack` npm script.
+After bundling the package, packages `@cjsa/*` will be published to npm. testing is enforce by using `postpack` npm script.
 
 ## Contribute
 
