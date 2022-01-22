@@ -55,3 +55,6 @@
 [submodule "modules/junk"]
 	path = modules/junk
 	url = https://github.com/sindresorhus/junk
+[submodule "modules/p-filter"]
+	path = modules/p-filter
+	url = https://github.com/sindresorhus/p-filter

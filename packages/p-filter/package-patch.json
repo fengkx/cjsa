@@ -1,0 +1,16 @@
+{
+  "name": "@cjsa/p-filter",
+  "type": "commonjs",
+  "exports": "./dist-cjs/index.cjs",
+  "types": "./dist-cjs/index.d.ts",
+  "files": ["dist-cjs/*"],
+  "scripts": {
+    "tocjs:patch-package-json": "pnpx patch-package-json p-filter",
+    "prepare": "node build-cjs.js",
+    "test": "pnpx jest",
+    "postpack": "pnpx jest"
+  },
+  "dependencies": {
+    "p-map": "npm:@cjsa/p-map@^5.1.0"
+  }
+}

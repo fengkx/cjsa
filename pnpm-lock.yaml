@@ -225,6 +225,19 @@ importers:
       tsd: 0.18.0
       xo: 0.45.0
 
+  modules/p-filter:
+    specifiers:
+      ava: ^3.15.0
+      p-map: ^5.1.0
+      tsd: ^0.17.0
+      xo: ^0.44.0
+    dependencies:
+      p-map: link:../p-map
+    devDependencies:
+      ava: 3.15.0
+      tsd: 0.17.0
+      xo: 0.44.0
+
   modules/p-limit:
     specifiers:
       ava: ^3.15.0
@@ -497,6 +510,19 @@ importers:
       ava: 3.15.0
       tsd: 0.18.0
       xo: 0.45.0
+
+  packages/p-filter:
+    specifiers:
+      ava: ^3.15.0
+      p-map: npm:@cjsa/p-map@^5.1.0
+      tsd: ^0.17.0
+      xo: ^0.44.0
+    dependencies:
+      p-map: link:../p-map
+    devDependencies:
+      ava: 3.15.0
+      tsd: 0.17.0
+      xo: 0.44.0
 
   packages/p-limit:
     specifiers:
