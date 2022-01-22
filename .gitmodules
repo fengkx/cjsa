@@ -43,3 +43,12 @@
 [submodule "modules/arrify"]
 	path = modules/arrify
 	url = https://github.com/sindresorhus/arrify
+[submodule "modules/p-map"]
+	path = modules/p-map
+	url = https://github.com/sindresorhus/p-map
+[submodule "modules/aggregate-error"]
+	path = modules/aggregate-error
+	url = https://github.com/sindresorhus/aggregate-error
+[submodule "modules/indent-string"]
+	path = modules/indent-string
+	url = https://github.com/sindresorhus/indent-string
