@@ -1,0 +1,16 @@
+{
+  "name": "@cjsa/p-map",
+  "type": "commonjs",
+  "exports": "./dist-cjs/index.cjs",
+  "types": "./dist-cjs/index.d.ts",
+  "files": ["dist-cjs/*"],
+  "scripts": {
+    "tocjs:patch-package-json": "pnpx patch-package-json p-map",
+    "prepare": "node build-cjs.js",
+    "test": "pnpx jest",
+    "postpack": "pnpx jest"
+  },
+  "dependencies": {
+    "aggregate-error": "npm:@cjsa/aggregate-error@^4.0.0"
+  }
+}
