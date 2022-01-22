@@ -52,3 +52,6 @@
 [submodule "modules/indent-string"]
 	path = modules/indent-string
 	url = https://github.com/sindresorhus/indent-string
+[submodule "modules/junk"]
+	path = modules/junk
+	url = https://github.com/sindresorhus/junk
