@@ -6,7 +6,14 @@ const {
 
 require("zx/globals");
 
+const SHOULD_COMMIT =
+  !!process.env.GITHUB_WORKFLOW && !!process.env.SECRET_GITHUB_TOKEN;
+
 async function main() {
+  if (SHOULD_COMMIT) {
+    await $`git config --local user.email "github-actions@github.com"`;
+    await $`git config --local user.name "github-actions"`;
+  }
   const packages = await getAllPackages();
   await Promise.all(packages.map((pkg) => upgradePackage(pkg)));
   await `git submodule update --init --recursive --remote`;
@@ -15,7 +22,7 @@ async function main() {
     await $`pnpx generate-readme`;
     await $`pnpm run publish`;
     // await $`pnpm run publish:prod`
-    if (!!process.env.GITHUB_WORKFLOW && !!process.env.SECRET_GITHUB_TOKEN) {
+    if (SHOULD_COMMIT) {
       await $`git push --follow-tags`;
     }
   } catch (err) {
@@ -31,14 +38,14 @@ async function upgradePackage(pkg) {
   const latestVersion = data["dist-tags"].latest;
   const currentVersion = packageJson.version;
   if (!isEqualOriginalVersion(currentVersion, latestVersion)) {
-    await $`git config --local user.email "github-actions@github.com"`;
-    await $`git config --local user.name "github-actions"`;
     console.info(chalk.blue(pkg), `from ${currentVersion} to ${latestVersion}`);
     packageJson.version = latestVersion;
     fs.writeJSON(packageJsonPath, packageJson, { spaces: 2 });
-    await $`git add ${packageJsonPath}`;
-    const commitLog = `${pkg} from ${currentVersion} to ${latestVersion}`;
-    await $`git commit -m "${commitLog}"`;
+    if (SHOULD_COMMIT) {
+      await $`git add ${packageJsonPath}`;
+      const commitLog = `${pkg} from ${currentVersion} to ${latestVersion}`;
+      await $`git commit -m "${commitLog}"`;
+    }
   }
 }
 
