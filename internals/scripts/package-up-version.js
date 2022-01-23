@@ -6,8 +6,7 @@ const {
 
 require("zx/globals");
 
-const SHOULD_COMMIT =
-  !!process.env.GITHUB_WORKFLOW && !!process.env.SECRET_GITHUB_TOKEN;
+const SHOULD_COMMIT = !!process.env.GITHUB_WORKFLOW;
 
 async function main() {
   if (SHOULD_COMMIT) {
