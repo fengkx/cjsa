@@ -1,6 +1,6 @@
 {
   "name": "@cjsa/globby",
-  "version": "12.2.0",
+  "version": "12.2.0-cjsa.0",
   "description": "User-friendly glob matching",
   "license": "MIT",
   "repository": "sindresorhus/globby",

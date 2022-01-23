@@ -1,6 +1,7 @@
 {
   "name": "@cjsa/yocto-queue",
   "type": "commonjs",
+  "version": "1.0.0-cjsa.0",
   "exports": "./dist-cjs/index.js",
   "files": ["dist-cjs/*"],
   "types": "./dist-cjs/index.d.ts",

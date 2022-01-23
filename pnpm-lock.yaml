@@ -372,7 +372,7 @@ importers:
       tsd: ^0.14.0
       xo: ^0.38.2
     dependencies:
-      clean-stack: link:../clean-stack
+      clean-stack: /@cjsa/clean-stack/4.1.0
       indent-string: link:../indent-string
     devDependencies:
       ava: 3.15.0
@@ -406,7 +406,7 @@ importers:
       tsd: ^0.14.0
       xo: ^0.38.2
     dependencies:
-      escape-string-regexp: link:../escape-string-regexp
+      escape-string-regexp: /@cjsa/escape-string-regexp/5.0.0
     devDependencies:
       ava: 3.15.0
       tsd: 0.14.0
@@ -457,8 +457,8 @@ importers:
       tsd: ^0.17.0
       xo: ^0.44.0
     dependencies:
-      locate-path: link:../locate-path
-      path-exists: link:../path-exists
+      locate-path: /@cjsa/locate-path/7.0.0
+      path-exists: /@cjsa/path-exists/5.0.0
     devDependencies:
       ava: 3.15.0
       is-path-inside: 4.0.0
@@ -485,12 +485,12 @@ importers:
       typescript: ^4.5.2
       xo: ^0.47.0
     dependencies:
-      array-union: link:../array-union
+      array-union: /@cjsa/array-union/3.0.1
       dir-glob: 3.0.1
       fast-glob: 3.2.11
       ignore: 5.2.0
       merge2: 1.4.1
-      slash: link:../slash
+      slash: /@cjsa/slash/4.0.0
     devDependencies:
       "@types/node": 16.11.21
       ava: 3.15.0
@@ -530,7 +530,7 @@ importers:
       tsd: ^0.17.0
       xo: ^0.44.0
     dependencies:
-      p-locate: link:../p-locate
+      p-locate: /@cjsa/p-locate/6.0.0
     devDependencies:
       ava: 3.15.0
       tsd: 0.17.0
@@ -587,7 +587,7 @@ importers:
       xo: ^0.44.0
       yocto-queue: npm:@cjsa/yocto-queue@^1.0.0
     dependencies:
-      yocto-queue: link:../yocto-queue
+      yocto-queue: /@cjsa/yocto-queue/1.0.0
     devDependencies:
       ava: 3.15.0
       delay: 5.0.0
@@ -607,7 +607,7 @@ importers:
       tsd: ^0.17.0
       xo: ^0.44.0
     dependencies:
-      p-limit: link:../p-limit
+      p-limit: /@cjsa/p-limit/4.0.0
     devDependencies:
       ava: 3.15.0
       delay: 5.0.0
@@ -1159,6 +1159,86 @@ packages:
         integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==,
       }
     dev: true
+
+  /@cjsa/array-union/3.0.1:
+    resolution:
+      {
+        integrity: sha512-0deVgt2umhQvMwFw8GtyJunxyluc+7KnpKN2WKuDzWavesvY0EWrZd2xWQ8Sr+9fQrZwvJvjy26qpbMqMlnRYQ==,
+      }
+    engines: { node: ">=12" }
+    dev: false
+
+  /@cjsa/clean-stack/4.1.0:
+    resolution:
+      {
+        integrity: sha512-3Mgy6Tb+2w9pRlZS3MiPu4aeznnCd5HXxYAYF8fBT3nWjLOmRBxUEbtfx8L3FzPiPbYWXdhlakHg7V3uQEacVw==,
+      }
+    engines: { node: ">=12" }
+    dependencies:
+      escape-string-regexp: /@cjsa/escape-string-regexp/5.0.0
+    dev: false
+
+  /@cjsa/escape-string-regexp/5.0.0:
+    resolution:
+      {
+        integrity: sha512-59hF/2KnrlPIP0CtnuL5aRlyjRsDFXG2dolXCKmLlfDqqOHgT3Ah/1Suyn8ox6wsrw3sIiaA0A4hmwsgVmPEow==,
+      }
+    engines: { node: ">=12" }
+    dev: false
+
+  /@cjsa/locate-path/7.0.0:
+    resolution:
+      {
+        integrity: sha512-dgCKnq5K+lNd0V4xFP244GFKzP1c4spLLFVqk435bZQFJdiQt1Ty/GaqpOMGHBGtpv5jnR4UPXG8tecKYV7V9w==,
+      }
+    engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
+    dependencies:
+      p-locate: /@cjsa/p-locate/6.0.0
+    dev: false
+
+  /@cjsa/p-limit/4.0.0:
+    resolution:
+      {
+        integrity: sha512-zFy9I4zodsYMBY00m8hesmsyL2mbcKB3Pociw01HapGy2GoPWeu+iAO4lFqZsjlee2ga2ikfdE91A46kcbeK4Q==,
+      }
+    engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
+    dependencies:
+      yocto-queue: /@cjsa/yocto-queue/1.0.0
+    dev: false
+
+  /@cjsa/p-locate/6.0.0:
+    resolution:
+      {
+        integrity: sha512-p5WMp7OtBLIVUxosV3vlQR0Sui+J6FOQM/fLi5agN9kkBVu1hVwXCvP65JVmZb9jEBjwFg9RZVcUih7zM3BFrA==,
+      }
+    engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
+    dependencies:
+      p-limit: /@cjsa/p-limit/4.0.0
+    dev: false
+
+  /@cjsa/path-exists/5.0.0:
+    resolution:
+      {
+        integrity: sha512-WVDZQXQ3EcjAFHKnfq6FMgZ9kwUyCMe2MWalizruT05paQh7D9F1RU0zSlklKzKgw+x8qhGu3hPcg8cMcvDHbQ==,
+      }
+    engines: { node: ^12.20.0 || ^14.13.1 || >=16.0.0 }
+    dev: false
+
+  /@cjsa/slash/4.0.0:
+    resolution:
+      {
+        integrity: sha512-AKYSi8DrobixNl9E64etMRMSIhEfjSYU60wczLIpLbovGZoDEeUCuXR2OcJFmJvtRHrVEF53t8fytvp/k9kmwg==,
+      }
+    engines: { node: ">=12" }
+    dev: false
+
+  /@cjsa/yocto-queue/1.0.0:
+    resolution:
+      {
+        integrity: sha512-HDPIBvvG2habyMCgJ5eMMGmbdbA4ysnq8yNvyNi6EejeWUsm1iG6riY3KIrn2yuhUmWPkx/pJnCjo0XdFo38+Q==,
+      }
+    engines: { node: ">=12.20" }
+    dev: false
 
   /@concordance/react/2.0.0:
     resolution:

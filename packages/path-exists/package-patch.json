@@ -1,5 +1,6 @@
 {
   "name": "@cjsa/path-exists",
+  "version": "5.0.0-cjsa.0",
   "type": "commonjs",
   "exports": "./dist-cjs/index.js",
   "types": "./dist-cjs/index.d.ts",

@@ -1,5 +1,6 @@
 {
   "name": "@cjsa/escape-goat",
+  "version": "4.0.0-cjsa.0",
   "type": "commonjs",
   "types": "./dist-cjs/index.d.ts",
   "exports": "./dist-cjs/index.cjs",

@@ -1,6 +1,6 @@
 {
   "name": "@cjsa/locate-path",
-  "version": "7.0.0",
+  "version": "7.0.0-cjsa.0",
   "description": "Get the first path that exists on disk of multiple paths",
   "license": "MIT",
   "repository": "sindresorhus/locate-path",
