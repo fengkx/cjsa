@@ -1,6 +1,9 @@
 const { $, fs, path, cd } = require("zx");
 const { absPackagesDir } = require("@cjsa/internals-shared/const");
-const { getAllPackages } = require("@cjsa/internals-shared/utils");
+const {
+  getAllPackages,
+  stripCjsaPatchSuffix,
+} = require("@cjsa/internals-shared/utils");
 
 async function main() {
   try {
@@ -20,7 +23,7 @@ async function generateReadme(pkg) {
     path.join(absPackagesDir, pkg, "package.json")
   );
   const content = `
-# ${pkgJson.name}@${pkgJson.version}
+# ${pkgJson.name}@${stripCjsaPatchSuffix(pkgJson.version)}
 Source Code: https://github.com/fengkx/cjsa/tree/master/packages/${pkg}
 
 You can find usage(exports) in [unit test](https://github.com/fengkx/cjsa/tree/master/packages/${pkg}/test/pkg.test.js)
@@ -28,7 +31,9 @@ You can find usage(exports) in [unit test](https://github.com/fengkx/cjsa/tree/m
 -----
 Created by [cjsa](https://github.com/fengkx/cjsa/)
 
-Original package: https://www.npmjs.com/package/${pkg}/v/${pkgJson.version}
+Original package: https://www.npmjs.com/package/${pkg}/v/${stripCjsaPatchSuffix(
+    pkgJson.version
+  )}
 License: ${pkgJson.license}
     `;
   return await fs.writeFile(targetPath, content);

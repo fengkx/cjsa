@@ -1,5 +1,8 @@
 const { absPackagesDir } = require("@cjsa/internals-shared/const");
-const { getAllPackages } = require("@cjsa/internals-shared/utils");
+const {
+  getAllPackages,
+  isEqualOriginalVersion,
+} = require("@cjsa/internals-shared/utils");
 
 require("zx/globals");
 
@@ -27,7 +30,7 @@ async function upgradePackage(pkg) {
   const data = await resp.json();
   const latestVersion = data["dist-tags"].latest;
   const currentVersion = packageJson.version;
-  if (currentVersion !== latestVersion) {
+  if (!isEqualOriginalVersion(currentVersion, latestVersion)) {
     await $`git config --local user.email "github-actions@github.com"`;
     await $`git config --local user.name "github-actions"`;
     console.info(chalk.blue(pkg), `from ${currentVersion} to ${latestVersion}`);
