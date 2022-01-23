@@ -1,6 +1,6 @@
 {
   "name": "@cjsa/dot-prop",
-  "version": "7.0.0-cjsa.0",
+  "version": "7.1.1-cjsa.0",
   "type": "commonjs",
   "types": "./dist-cjs/index.d.ts",
   "exports": "./dist-cjs/index.cjs",
