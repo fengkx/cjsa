@@ -1,6 +1,6 @@
 {
   "name": "@cjsa/find-up",
-  "version": "6.2.0",
+  "version": "6.2.0-cjsa.0",
   "description": "Find a file or directory by walking up parent directories",
   "license": "MIT",
   "repository": "sindresorhus/find-up",
@@ -16,9 +16,10 @@
     "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
   },
   "scripts": {
-    "test": "jest",
+    "test": "pnpx jest",
+    "tocjs:patch-package-json": "pnpx patch-package-json find-up",
     "prepare": "node build-cjs.js",
-    "postpack": "jest"
+    "postpack": "pnpx jest"
   },
   "files": [
     "dist-cjs/*"
@@ -53,5 +54,6 @@
     "tempy": "^2.0.0",
     "tsd": "^0.17.0",
     "xo": "^0.44.0"
-  }
+  },
+  "types": "./dist-cjs/index.d.ts"
 }
