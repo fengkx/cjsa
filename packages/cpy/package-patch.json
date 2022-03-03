@@ -1,0 +1,23 @@
+{
+  "name": "@cjsa/cpy",
+  "type": "commonjs",
+  "exports": "./dist-cjs/index.cjs",
+  "types": "./dist-cjs/index.d.ts",
+  "files": ["dist-cjs/*"],
+  "scripts": {
+    "tocjs:patch-package-json": "pnpx patch-package-json cpy",
+    "prepare": "node build-cjs.js",
+    "test": "pnpx jest",
+    "postpack": "pnpx jest"
+  },
+  "dependencies": {
+    "arrify": "npm:@cjsa/arrify@^3.0.0",
+    "cp-file": "^9.1.0",
+    "globby": "npm:@cjsa/globby@^13.1.1",
+    "junk": "npm:@cjsa/junk@^4.0.0",
+    "micromatch": "^4.0.4",
+    "nested-error-stacks": "^2.1.0",
+    "p-filter": "npm:@cjsa/p-filter@^3.0.0",
+    "p-map": "npm:@cjsa/p-map@^5.3.0"
+  }
+}

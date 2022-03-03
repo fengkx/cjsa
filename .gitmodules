@@ -64,3 +64,6 @@
 [submodule "modules/p-event"]
 	path = modules/p-event
 	url = https://github.com/sindresorhus/p-event
+[submodule "modules/cpy"]
+	path = modules/cpy
+	url = https://github.com/sindresorhus/cpy
