@@ -7,8 +7,8 @@
   "scripts": {
     "tocjs:patch-package-json": "pnpx patch-package-json p-map",
     "prepare": "node build-cjs.js",
-    "test": "pnpx jest",
-    "postpack": "pnpx jest"
+    "test": "pnpm jest",
+    "postpack": "pnpm jest"
   },
   "dependencies": {
     "aggregate-error": "npm:@cjsa/aggregate-error@^4.0.0"

@@ -16,10 +16,10 @@
     "node": "^12.20.0 || ^14.13.1 || >=16.0.0"
   },
   "scripts": {
-    "test": "pnpx jest",
+    "test": "pnpm jest",
     "tocjs:patch-package-json": "pnpx patch-package-json lowercase-keys",
     "prepare": "node build-cjs.js",
-    "postpack": "pnpx jest"
+    "postpack": "pnpm jest"
   },
   "files": [
     "dist-cjs/*"

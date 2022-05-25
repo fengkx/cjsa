@@ -8,8 +8,8 @@
   "scripts": {
     "tocjs:patch-package-json": "pnpx patch-package-json globby",
     "prepare": "node build-cjs.js",
-    "test": "pnpx jest",
-    "postpack": "pnpx jest"
+    "test": "pnpm jest",
+    "postpack": "pnpm jest"
   },
   "dependencies": {
     "array-union": "npm:@cjsa/array-union@^3.0.1",

@@ -7,8 +7,8 @@
   "scripts": {
     "tocjs:patch-package-json": "pnpx patch-package-json cpy",
     "prepare": "node build-cjs.js",
-    "test": "pnpx jest",
-    "postpack": "pnpx jest"
+    "test": "pnpm jest",
+    "postpack": "pnpm jest"
   },
   "dependencies": {
     "arrify": "npm:@cjsa/arrify@^3.0.0",

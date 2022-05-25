@@ -7,7 +7,7 @@
   "scripts": {
     "tocjs:patch-package-json": "pnpx patch-package-json junk",
     "prepare": "node build-cjs.js",
-    "test": "pnpx jest",
-    "postpack": "pnpx jest"
+    "test": "pnpm jest",
+    "postpack": "pnpm jest"
   }
 }
