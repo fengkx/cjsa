@@ -6,8 +6,8 @@
   "scripts": {
     "preinstall": "npx only-allow pnpm",
     "add:package": "pnpm run --filter ./internals/scripts plop",
-    "test": "pnpm -r run --filter ./packages/** --parallel --stream test",
-    "clean:modules": "pnpm -r --filter ./modules exec -- git checkout -- .",
+    "test": "pnpm -r --parallel --stream --filter './packages/**'  test",
+    "clean:modules": "pnpm -r --filter './modules/**' exec -- git checkout -- .",
     "prepublishOnly": "pnpx generate-readme",
     "publish": "pnpm publish --filter ./packages/** --dry-run --no-git-checks",
     "publish:prod": "pnpm publish --filter ./packages/** --no-git-checks --access public",
