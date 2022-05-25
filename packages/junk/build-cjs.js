@@ -12,7 +12,7 @@ async function main() {
 }
 async function build() {
   await fs.emptyDir(moduleDistDir);
-  await $`pnpx tsup index.js --target es2020 --format cjs,esm --dts --splitting`;
+  await $`pnpm tsup index.js --target es2020 --format cjs,esm --dts --splitting`;
 }
 async function postbuild() {
   await fs.copy(moduleDistDir, packageDistDir);
