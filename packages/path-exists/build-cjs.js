@@ -18,7 +18,7 @@ async function main() {
 
 async function build() {
   await fs.emptyDir(moduleDistDir);
-  await $`pnpx tsc --esModuleInterop --outDir dist --target es2020 --module commonjs --allowJs index.js`;
+  await $`pnpm tsc --esModuleInterop --outDir dist --target es2020 --module commonjs --allowJs index.js`;
 }
 
 async function postbuild() {
