@@ -19,5 +19,6 @@
     "nested-error-stacks": "^2.1.0",
     "p-filter": "npm:@cjsa/p-filter@^3.0.0",
     "p-map": "npm:@cjsa/p-map@^5.3.0"
-  }
+  },
+  "exports": null
 }
