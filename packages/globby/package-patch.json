@@ -2,7 +2,7 @@
   "name": "@cjsa/globby",
   "version": "12.2.0-cjsa.0",
   "type": "commonjs",
-  "exports": "./dist-cjs/index.cjs",
+  "main": "./dist-cjs/index.cjs",
   "types": "./dist-cjs/index.d.ts",
   "files": ["dist-cjs/*"],
   "scripts": {

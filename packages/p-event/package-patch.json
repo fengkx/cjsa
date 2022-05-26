@@ -1,7 +1,7 @@
 {
   "name": "@cjsa/p-event",
   "type": "commonjs",
-  "exports": "./dist-cjs/index.cjs",
+  "main": "./dist-cjs/index.cjs",
   "types": "./dist-cjs/index.d.ts",
   "files": ["dist-cjs/*"],
   "scripts": {

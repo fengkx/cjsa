@@ -1,7 +1,7 @@
 {
   "name": "@cjsa/lowercase-keys",
   "type": "commonjs",
-  "exports": "./dist-cjs/index.cjs",
+  "main": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
   "scripts": {
     "tocjs:patch-package-json": "pnpx patch-package-json lowercase-keys",

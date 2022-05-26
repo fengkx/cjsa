@@ -3,7 +3,7 @@
   "version": "4.0.0-cjsa.0",
   "type": "commonjs",
   "types": "./dist-cjs/index.d.ts",
-  "exports": "./dist-cjs/index.cjs",
+  "main": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
   "scripts": {
     "tocjs:patch-package-json": "pnpx patch-package-json escape-goat",
