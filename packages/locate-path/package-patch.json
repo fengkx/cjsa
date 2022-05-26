@@ -2,7 +2,7 @@
   "name": "@cjsa/locate-path",
   "version": "7.0.0-cjsa.0",
   "type": "commonjs",
-  "exports": "./dist-cjs/index.cjs",
+  "main": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
   "types": "./dist-cjs/index.d.ts",
   "scripts": {
