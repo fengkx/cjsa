@@ -6,7 +6,7 @@
   "types": "./dist-cjs/index.d.ts",
   "files": ["dist-cjs/*"],
   "scripts": {
-    "tocjs:patch-package-json": "pnpx patch-package-json globby",
+    "tocjs:patch-package-json": "pnpm patch-package-json globby",
     "prepare": "node build-cjs.js",
     "test": "pnpm jest",
     "postpack": "pnpm jest"

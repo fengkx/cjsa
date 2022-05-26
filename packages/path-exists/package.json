@@ -16,7 +16,7 @@
   },
   "scripts": {
     "test": "jest",
-    "tocjs:patch-package-json": "pnpx patch-package-json path-exists",
+    "tocjs:patch-package-json": "pnpm patch-package-json path-exists",
     "prepare": "node build-cjs.js",
     "postpack": "jest"
   },

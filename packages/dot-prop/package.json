@@ -18,7 +18,7 @@
   "scripts": {
     "test": "pnpm jest",
     "bench": "node benchmark.js",
-    "tocjs:patch-package-json": "pnpx patch-package-json dot-prop",
+    "tocjs:patch-package-json": "pnpm patch-package-json dot-prop",
     "prepare": "node build-cjs.js",
     "postpack": "pnpm jest"
   },

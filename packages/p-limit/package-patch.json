@@ -6,7 +6,7 @@
   "files": ["dist-cjs/*"],
   "types": "./dist-cjs/index.d.ts",
   "scripts": {
-    "tocjs:patch-package-json": "pnpx patch-package-json p-limit",
+    "tocjs:patch-package-json": "pnpm patch-package-json p-limit",
     "prepare": "node build-cjs.js",
     "test": "jest",
     "postpack": "jest"

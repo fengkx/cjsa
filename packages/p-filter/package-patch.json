@@ -5,7 +5,7 @@
   "types": "./dist-cjs/index.d.ts",
   "files": ["dist-cjs/*"],
   "scripts": {
-    "tocjs:patch-package-json": "pnpx patch-package-json p-filter",
+    "tocjs:patch-package-json": "pnpm patch-package-json p-filter",
     "prepare": "node build-cjs.js",
     "test": "pnpm jest",
     "postpack": "pnpm jest"

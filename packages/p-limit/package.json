@@ -17,7 +17,7 @@
   },
   "scripts": {
     "test": "jest",
-    "tocjs:patch-package-json": "pnpx patch-package-json p-limit",
+    "tocjs:patch-package-json": "pnpm patch-package-json p-limit",
     "prepare": "node build-cjs.js",
     "postpack": "jest"
   },

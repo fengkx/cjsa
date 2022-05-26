@@ -6,7 +6,7 @@
   "main": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
   "scripts": {
-    "tocjs:patch-package-json": "pnpx patch-package-json dot-prop",
+    "tocjs:patch-package-json": "pnpm patch-package-json dot-prop",
     "prepare": "node build-cjs.js",
     "test": "pnpm jest",
     "postpack": "pnpm jest"

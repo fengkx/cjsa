@@ -17,7 +17,7 @@
   },
   "scripts": {
     "test": "pnpm jest",
-    "tocjs:patch-package-json": "pnpx patch-package-json arrify",
+    "tocjs:patch-package-json": "pnpm patch-package-json arrify",
     "prepare": "node build-cjs.js",
     "postpack": "pnpm jest"
   },

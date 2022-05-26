@@ -6,7 +6,7 @@
   "files": ["dist-cjs/*"],
   "types": "./dist-cjs/index.d.ts",
   "scripts": {
-    "tocjs:patch-package-json": "pnpx patch-package-json yocto-queue",
+    "tocjs:patch-package-json": "pnpm patch-package-json yocto-queue",
     "prepare": "node build-cjs.js",
     "test": "pnpm jest",
     "postpack": "pnpm jest"

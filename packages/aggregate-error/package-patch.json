@@ -5,7 +5,7 @@
   "types": "./dist-cjs/index.d.ts",
   "files": ["dist-cjs/*"],
   "scripts": {
-    "tocjs:patch-package-json": "pnpx patch-package-json aggregate-error",
+    "tocjs:patch-package-json": "pnpm patch-package-json aggregate-error",
     "prepare": "node build-cjs.js",
     "test": "pnpm jest",
     "postpack": "pnpm jest"

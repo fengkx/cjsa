@@ -18,7 +18,7 @@
   "scripts": {
     "bench": "npm update glob-stream fast-glob && matcha bench.js",
     "test": "pnpm jest",
-    "tocjs:patch-package-json": "pnpx patch-package-json globby",
+    "tocjs:patch-package-json": "pnpm patch-package-json globby",
     "prepare": "node build-cjs.js",
     "postpack": "pnpm jest"
   },

@@ -6,7 +6,7 @@
   "types": "./dist-cjs/index.d.ts",
   "files": ["dist-cjs/*"],
   "scripts": {
-    "tocjs:patch-package-json": "pnpx patch-package-json path-exists",
+    "tocjs:patch-package-json": "pnpm patch-package-json path-exists",
     "prepare": "node build-cjs.js",
     "test": "jest",
     "postpack": "jest"
