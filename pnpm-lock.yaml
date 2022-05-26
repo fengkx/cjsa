@@ -111,7 +111,7 @@ importers:
     dependencies:
       arrify: link:../arrify
       cp-file: 9.1.0
-      globby: 13.1.1
+      globby: link:../globby
       junk: link:../junk
       micromatch: 4.0.4
       nested-error-stacks: 2.1.0
@@ -182,39 +182,37 @@ importers:
 
   modules/globby:
     specifiers:
-      "@types/node": ^16.11.11
-      array-union: ^3.0.1
-      ava: ^3.15.0
+      "@globby/main-branch": sindresorhus/globby#main
+      "@types/node": ^17.0.10
+      ava: ^4.0.1
+      benchmark: 2.1.4
       dir-glob: ^3.0.1
-      fast-glob: ^3.2.7
+      fast-glob: ^3.2.11
       get-stream: ^6.0.1
       glob-stream: ^7.0.0
-      globby: sindresorhus/globby#main
-      ignore: ^5.1.9
-      matcha: ^0.7.0
+      ignore: ^5.2.0
       merge2: ^1.4.1
       rimraf: ^3.0.2
       slash: ^4.0.0
-      tsd: ^0.19.0
-      typescript: ^4.5.2
+      tsd: ^0.19.1
+      typescript: ^4.5.5
       xo: ^0.47.0
     dependencies:
-      array-union: link:../array-union
       dir-glob: 3.0.1
       fast-glob: 3.2.11
       ignore: 5.2.0
       merge2: 1.4.1
       slash: link:../slash
     devDependencies:
-      "@types/node": 16.11.21
-      ava: 3.15.0
+      "@globby/main-branch": github.com/sindresorhus/globby/42136ef41170cf18f8a49a85c8986dffa7dc60ea
+      "@types/node": 17.0.35
+      ava: 4.2.0
+      benchmark: 2.1.4
       get-stream: 6.0.1
       glob-stream: 7.0.0
-      globby: github.com/sindresorhus/globby/42136ef41170cf18f8a49a85c8986dffa7dc60ea
-      matcha: 0.7.0
       rimraf: 3.0.2
       tsd: 0.19.1
-      typescript: 4.5.4
+      typescript: 4.7.2
       xo: 0.47.0
 
   modules/indent-string:
@@ -538,39 +536,37 @@ importers:
 
   packages/globby:
     specifiers:
-      "@types/node": ^16.11.11
-      array-union: npm:@cjsa/array-union@^3.0.1
-      ava: ^3.15.0
+      "@globby/main-branch": sindresorhus/globby#main
+      "@types/node": ^17.0.10
+      ava: ^4.0.1
+      benchmark: 2.1.4
       dir-glob: ^3.0.1
-      fast-glob: ^3.2.7
+      fast-glob: ^3.2.11
       get-stream: ^6.0.1
       glob-stream: ^7.0.0
-      globby: sindresorhus/globby#main
-      ignore: ^5.1.9
-      matcha: ^0.7.0
+      ignore: ^5.2.0
       merge2: ^1.4.1
       rimraf: ^3.0.2
       slash: npm:@cjsa/slash@^4.0.0
-      tsd: ^0.19.0
-      typescript: ^4.5.2
+      tsd: ^0.19.1
+      typescript: ^4.5.5
       xo: ^0.47.0
     dependencies:
-      array-union: /@cjsa/array-union/3.0.1
       dir-glob: 3.0.1
       fast-glob: 3.2.11
       ignore: 5.2.0
       merge2: 1.4.1
       slash: /@cjsa/slash/4.0.0
     devDependencies:
-      "@types/node": 16.11.21
-      ava: 3.15.0
+      "@globby/main-branch": github.com/sindresorhus/globby/42136ef41170cf18f8a49a85c8986dffa7dc60ea
+      "@types/node": 17.0.35
+      ava: 4.2.0
+      benchmark: 2.1.4
       get-stream: 6.0.1
       glob-stream: 7.0.0
-      globby: github.com/sindresorhus/globby/42136ef41170cf18f8a49a85c8986dffa7dc60ea
-      matcha: 0.7.0
       rimraf: 3.0.2
       tsd: 0.19.1
-      typescript: 4.5.4
+      typescript: 4.7.2
       xo: 0.47.0
 
   packages/indent-string:
@@ -1421,14 +1417,6 @@ packages:
         integrity: sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==,
       }
     dev: true
-
-  /@cjsa/array-union/3.0.1:
-    resolution:
-      {
-        integrity: sha512-0deVgt2umhQvMwFw8GtyJunxyluc+7KnpKN2WKuDzWavesvY0EWrZd2xWQ8Sr+9fQrZwvJvjy26qpbMqMlnRYQ==,
-      }
-    engines: { node: ">=12" }
-    dev: false
 
   /@cjsa/escape-string-regexp/5.0.0:
     resolution:
@@ -4641,12 +4629,6 @@ packages:
       is-obj: 2.0.0
     dev: true
 
-  /drip/1.1.0:
-    resolution: { integrity: sha1-zO+x5obYb8EVtwyewSb4+HG9/X4= }
-    dependencies:
-      tea-concat: 0.1.0
-    dev: true
-
   /duplexer/0.1.2:
     resolution:
       {
@@ -4688,13 +4670,6 @@ packages:
       {
         integrity: sha512-k/0t1TRfonHIp8TJKfjBu2cKj8MqYTiEpOhci+q7CVEE5xnCQnx1pTa+V8b/sdhe4S3PR4p4iceEQWhGrKQORQ==,
       }
-    dev: true
-
-  /electron/0.4.1:
-    resolution: { integrity: sha1-p4oFGniC9OVC1uIH2KGnMHazAUQ= }
-    deprecated: The original electron project has been moved. Visit github.com/logicalparadox/electron for more details.
-    dependencies:
-      drip: 1.1.0
     dev: true
 
   /emittery/0.10.0:
@@ -7460,6 +7435,7 @@ packages:
       ignore: 5.2.0
       merge2: 1.4.1
       slash: 4.0.0
+    dev: true
 
   /globby/9.2.0:
     resolution:
@@ -9531,15 +9507,6 @@ packages:
     engines: { node: ">=0.10.0" }
     dependencies:
       object-visit: 1.0.1
-    dev: true
-
-  /matcha/0.7.0:
-    resolution: { integrity: sha1-E/gFQJs3vlcDLIRYZDvxUjumjdo= }
-    engines: { node: ">= 0.8.0" }
-    hasBin: true
-    dependencies:
-      electron: 0.4.1
-      v8-argv: 0.1.0
     dev: true
 
   /matcher/3.0.0:
@@ -12072,10 +12039,6 @@ packages:
     engines: { node: ">=0.6" }
     dev: true
 
-  /tea-concat/0.1.0:
-    resolution: { integrity: sha1-6i6QdAD914pjNM4CD6PGlQLZnoQ= }
-    dev: true
-
   /temp-dir/2.0.0:
     resolution:
       {
@@ -12802,10 +12765,6 @@ packages:
 
   /util-deprecate/1.0.2:
     resolution: { integrity: sha1-RQ1Nyfpw3nMnYvvS1KKJgUGaDM8= }
-
-  /v8-argv/0.1.0:
-    resolution: { integrity: sha1-rfd3pS29w9qciclGXlntXzy22ak= }
-    dev: true
 
   /v8-compile-cache/2.3.0:
     resolution:
