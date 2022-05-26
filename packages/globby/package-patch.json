@@ -1,6 +1,5 @@
 {
   "name": "@cjsa/globby",
-  "version": "12.2.0-cjsa.0",
   "type": "commonjs",
   "main": "./dist-cjs/index.cjs",
   "types": "./dist-cjs/index.d.ts",
@@ -12,7 +11,7 @@
     "postpack": "pnpm jest"
   },
   "dependencies": {
-    "array-union": "npm:@cjsa/array-union@^3.0.1",
     "slash": "npm:@cjsa/slash@^4.0.0"
-  }
+  },
+  "exports": null
 }
