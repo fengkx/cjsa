@@ -5,12 +5,13 @@
   "types": "./dist-cjs/index.d.ts",
   "files": ["dist-cjs/*"],
   "scripts": {
-    "tocjs:patch-package-json": "pnpx patch-package-json p-map",
+    "tocjs:patch-package-json": "pnpm patch-package-json p-map",
     "prepare": "node build-cjs.js",
     "test": "pnpm jest",
     "postpack": "pnpm jest"
   },
   "dependencies": {
-    "aggregate-error": "npm:@cjsa/aggregate-error@^4.0.0"
-  }
+    "aggregate-error": "npm:@cjsa/aggregate-error@^4.0.1"
+  },
+  "exports": null
 }
