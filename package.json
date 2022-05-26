@@ -9,7 +9,7 @@
     "add:package": "pnpm run --filter ./internals/scripts plop",
     "test": "pnpm -r --parallel --stream --filter './packages/**'  test",
     "clean:modules": "pnpm -r --filter './modules/**' exec -- git checkout -- .",
-    "prepublishOnly": "pnpx generate-readme",
+    "prepublishOnly": "pnpm generate-readme",
     "publish": "pnpm publish --dry-run --no-git-checks  --filter ./packages/**",
     "publish:prod": "pnpm publish --no-git-checks --access public --filter ./packages/**",
     "postinstall": "npx simple-git-hooks"
