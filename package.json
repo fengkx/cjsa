@@ -10,8 +10,8 @@
     "test": "pnpm -r --parallel --stream --filter './packages/**'  test",
     "clean:modules": "pnpm -r --filter './modules/**' exec -- git checkout -- .",
     "prepublishOnly": "pnpx generate-readme",
-    "publish": "pnpm publish --filter ./packages/** --dry-run --no-git-checks",
-    "publish:prod": "pnpm publish --filter ./packages/** --no-git-checks --access public",
+    "publish": "pnpm publish --dry-run --no-git-checks  --filter ./packages/**",
+    "publish:prod": "pnpm publish --no-git-checks --access public --filter ./packages/**",
     "postinstall": "npx simple-git-hooks"
   },
   "repository": {
