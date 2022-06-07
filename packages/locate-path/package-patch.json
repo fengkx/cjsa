@@ -1,6 +1,5 @@
 {
   "name": "@cjsa/locate-path",
-  "version": "7.0.0-cjsa.0",
   "type": "commonjs",
   "main": "./dist-cjs/index.cjs",
   "files": ["dist-cjs/*"],
@@ -11,6 +10,7 @@
     "test": "jest",
     "postpack": "jest"
   },
+  "exports": null,
   "dependencies": {
     "p-locate": "npm:@cjsa/p-locate"
   }
