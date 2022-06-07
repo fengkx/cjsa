@@ -1,4 +1,4 @@
-# @cjsa/aggregate-error@4.0.0
+# @cjsa/aggregate-error@4.0.1
 
 Source Code: https://github.com/fengkx/cjsa/tree/master/packages/aggregate-error
 
@@ -8,5 +8,5 @@ You can find usage(exports) in [unit test](https://github.com/fengkx/cjsa/tree/m
 
 Created by [cjsa](https://github.com/fengkx/cjsa/)
 
-Original package: https://www.npmjs.com/package/aggregate-error/v/4.0.0
+Original package: https://www.npmjs.com/package/aggregate-error/v/4.0.1
 License: MIT

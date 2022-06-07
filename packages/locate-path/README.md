@@ -1,4 +1,4 @@
-# @cjsa/locate-path@7.1.0
+# @cjsa/locate-path@7.1.1
 
 Source Code: https://github.com/fengkx/cjsa/tree/master/packages/locate-path
 
@@ -8,5 +8,5 @@ You can find usage(exports) in [unit test](https://github.com/fengkx/cjsa/tree/m
 
 Created by [cjsa](https://github.com/fengkx/cjsa/)
 
-Original package: https://www.npmjs.com/package/locate-path/v/7.1.0
+Original package: https://www.npmjs.com/package/locate-path/v/7.1.1
 License: MIT
