@@ -1,6 +1,5 @@
 {
   "name": "@cjsa/dot-prop",
-  "version": "7.1.1-cjsa.0",
   "type": "commonjs",
   "types": "./dist-cjs/index.d.ts",
   "main": "./dist-cjs/index.cjs",
@@ -10,5 +9,6 @@
     "prepare": "node build-cjs.js",
     "test": "pnpm jest",
     "postpack": "pnpm jest"
-  }
+  },
+  "exports": null
 }
