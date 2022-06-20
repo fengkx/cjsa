@@ -1,4 +1,4 @@
-# @cjsa/globby@13.1.1
+# @cjsa/globby@13.1.2
 
 Source Code: https://github.com/fengkx/cjsa/tree/master/packages/globby
 
@@ -8,5 +8,5 @@ You can find usage(exports) in [unit test](https://github.com/fengkx/cjsa/tree/m
 
 Created by [cjsa](https://github.com/fengkx/cjsa/)
 
-Original package: https://www.npmjs.com/package/globby/v/13.1.1
+Original package: https://www.npmjs.com/package/globby/v/13.1.2
 License: MIT
